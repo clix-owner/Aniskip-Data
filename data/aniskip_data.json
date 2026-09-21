@@ -273101,7 +273101,7 @@
     "malId": 55888,
     "title": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
     "format": "TV",
-    "totalEpisodes": 12,
+    "totalEpisodes": 24,
     "episodes": {
       "2": {
         "op": {
@@ -273155,6 +273155,110 @@
         "op": {
           "start": 78.91147,
           "end": 168.91147
+        }
+      },
+      "13": {
+        "ed": {
+          "start": 1356,
+          "end": 1394
+        }
+      },
+      "14": {
+        "op": {
+          "start": 85,
+          "end": 170
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1419
+        }
+      },
+      "15": {
+        "op": {
+          "start": 132,
+          "end": 217
+        },
+        "ed": {
+          "start": 1278,
+          "end": 1370
+        }
+      },
+      "16": {
+        "op": {
+          "start": 191,
+          "end": 277
+        },
+        "ed": {
+          "start": 1299,
+          "end": 1419
+        }
+      },
+      "17": {
+        "op": {
+          "start": 65,
+          "end": 151
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1419
+        }
+      },
+      "18": {
+        "op": {
+          "start": 97,
+          "end": 182
+        }
+      },
+      "19": {
+        "op": {
+          "start": 238,
+          "end": 323
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1419
+        }
+      },
+      "20": {
+        "op": {
+          "start": 114,
+          "end": 200
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1419
+        }
+      },
+      "21": {
+        "op": {
+          "start": 190,
+          "end": 275
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1419
+        }
+      },
+      "22": {
+        "op": {
+          "start": 76,
+          "end": 162
+        },
+        "ed": {
+          "start": 1224,
+          "end": 1315
+        }
+      },
+      "23": {
+        "ed": {
+          "start": 1325,
+          "end": 1418
+        }
+      },
+      "24": {
+        "ed": {
+          "start": 1314,
+          "end": 1409
         }
       }
     }
