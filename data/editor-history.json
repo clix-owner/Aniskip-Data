@@ -1,0 +1,28 @@
+[
+  {
+    "id": "f648530a-a785-4b5e-96c9-164b0175c7e0",
+    "at": "2026-10-04T03:37:23.675Z",
+    "malId": 61967,
+    "title": "Black Clover Season 2",
+    "action": "Update",
+    "undoOf": null,
+    "changes": [
+      {
+        "episode": 1,
+        "before": null,
+        "after": {
+          "op": {
+            "start": 0,
+            "end": 65
+          },
+          "ed": {
+            "start": 1339,
+            "end": 1430
+          }
+        },
+        "source": "manual/crunchyroll",
+        "mediaId": "GE00385472JAJP"
+      }
+    ]
+  }
+]
