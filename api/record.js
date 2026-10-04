@@ -85,9 +85,12 @@ function range(value, label, { optional = false } = {}) {
   // those placeholder skip events as absent instead of failing the whole
   // episode/bulk import. Manual input remains strict.
   const source = Array.isArray(value) ? value[0] : value;
-  const start = Number(source?.start ?? source?.startTime ?? source?.start_time);
-  const end = Number(source?.end ?? source?.endTime ?? source?.end_time);
-  const valid = Number.isFinite(start) && Number.isFinite(end) && start >= 0 && end > start;
+  const rawStart = source?.start ?? source?.startTime ?? source?.start_time;
+  const rawEnd = source?.end ?? source?.endTime ?? source?.end_time;
+  const start = Number(rawStart);
+  const end = Number(rawEnd);
+  const supplied = v => (typeof v === 'number' || typeof v === 'string') && String(v).trim() !== '';
+  const valid = supplied(rawStart) && supplied(rawEnd) && Number.isFinite(start) && Number.isFinite(end) && start >= 0 && end > start;
 
   if (!valid) {
     if (optional) return null;
@@ -109,30 +112,6 @@ function episodeKey(value) {
   return number === null ? null : String(number);
 }
 
-async function writeDatabase(database, baseTreeSha, parentSha, dataPath, message) {
-  const content = `${JSON.stringify(database, null, 2)}\n`;
-  const blob = await gh(repoPath("/git/blobs"), {
-    method: "POST",
-    body: JSON.stringify({ content: Buffer.from(content).toString("base64"), encoding: "base64" })
-  });
-  const tree = await gh(repoPath("/git/trees"), {
-    method: "POST",
-    body: JSON.stringify({
-      base_tree: baseTreeSha,
-      tree: [{ path: dataPath, mode: "100644", type: "blob", sha: blob.sha }]
-    })
-  });
-  const commit = await gh(repoPath("/git/commits"), {
-    method: "POST",
-    body: JSON.stringify({ message, tree: tree.sha, parents: [parentSha] })
-  });
-  await gh(repoPath(`/git/refs/heads/${encodeURIComponent(env("GITHUB_BRANCH", "main"))}`), {
-    method: "PATCH",
-    body: JSON.stringify({ sha: commit.sha, force: false })
-  });
-  return commit.sha;
-}
-
 function send(res, status, payload) {
   res.status(status).setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "no-store");
@@ -146,10 +125,10 @@ async function fetchCrunchyroll(mediaId) {
   }
   const response = await fetch(`https://static.crunchyroll.com/skip-events/production/${encodeURIComponent(id)}.json`, {
     headers: { Accept: "application/json" },
-    signal: AbortSignal.timeout(15000)
+    signal: AbortSignal.timeout(8000)
   });
   if (!response.ok) {
-    throw Object.assign(new Error(`Crunchyroll skip data unavailable for ${id} (${response.status})`), { status: 404 });
+    throw Object.assign(new Error(`Crunchyroll skip data unavailable for ${id} (${response.status})`), { status: response.status === 404 ? 404 : response.status === 429 ? 429 : 502 });
   }
   let data;
   try { data = JSON.parse(await response.text()); }
@@ -160,34 +139,13 @@ async function fetchCrunchyroll(mediaId) {
   return { requestedMediaId: id, mediaId: data.mediaId || id, op, ed, lastUpdated: data.lastUpdated || null };
 }
 
-async function fetchAllCrunchyroll(mediaIds, limit = 6) {
-  const results = new Array(mediaIds.length);
-  let cursor = 0;
-  async function worker() {
-    while (cursor < mediaIds.length) {
-      const index = cursor;
-      cursor += 1;
-      try {
-        results[index] = { ok: true, value: await fetchCrunchyroll(mediaIds[index]) };
-      } catch (error) {
-        // A 404 means this media item has no usable skip-event data. It is a
-        // valid episode to omit, not a reason to discard timestamps fetched
-        // for the rest of an ordered range. Auth, rate-limit and network
-        // errors still stop the batch because their outcome is uncertain.
-        if (error.status === 404) {
-          results[index] = { ok: false, mediaId: mediaIds[index], error: error.message };
-        } else {
-          throw error;
-        }
-      }
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(limit, mediaIds.length) }, worker));
-  return results;
-}
-
 export default async function handler(req, res) {
   try {
+    // All writes now pass through the audited, conflict-aware editor API.
+    if (req.method === 'POST') {
+      const { default: editor } = await import('./editor.js');
+      return editor(req, res);
+    }
     if (req.method === "GET") {
       if (req.query.mode === "crunchyroll") {
         const result = await fetchCrunchyroll(req.query.mediaId);
@@ -205,13 +163,14 @@ export default async function handler(req, res) {
         const requestedThrough = Number(req.query.through);
         const through = Number.isInteger(requestedThrough) && requestedThrough > 0
           ? requestedThrough
-          : (Number(anime.totalEpisodes) || maxStored);
+          : Math.max(Number(anime.totalEpisodes) || 0, maxStored);
+        if (through > 5000) return send(res, 400, { ok: false, error: 'Check 5000 episodes or fewer at a time' });
         const items = [];
         for (let number = 1; number <= through; number += 1) {
           const record = anime.episodes?.[String(number)] || null;
           const missing = [];
-          if (!record?.op) missing.push("op");
-          if (!record?.ed) missing.push("ed");
+          if (!record?.op && !record?.opAbsent) missing.push("op");
+          if (!record?.ed && !record?.edAbsent) missing.push("ed");
           if (missing.length) items.push({ episode: number, missing, record });
         }
         return send(res, 200, {
@@ -233,138 +192,8 @@ export default async function handler(req, res) {
     }
 
     if (req.method !== "POST") return send(res, 405, { ok: false, error: "Method not allowed" });
-    const providedKey = req.headers["x-admin-key"] || req.body?.adminKey;
-    if (!providedKey || providedKey !== env("ADMIN_KEY")) return send(res, 401, { ok: false, error: "Invalid admin key" });
-
-    const malId = Number(req.body?.malId);
-    if (req.body?.mode === "bulk") {
-      const startEpisode = Number(req.body?.startEpisode);
-      const endEpisode = Number(req.body?.endEpisode);
-      const mediaIds = Array.isArray(req.body?.mediaIds) ? req.body.mediaIds : [];
-      if (!Number.isInteger(malId) || malId <= 0 || !Number.isInteger(startEpisode) || !Number.isInteger(endEpisode) || startEpisode <= 0 || endEpisode < startEpisode) {
-        return send(res, 400, { ok: false, error: "MAL ID and a valid episode range are required" });
-      }
-      const expected = endEpisode - startEpisode + 1;
-      if (mediaIds.length !== expected) {
-        return send(res, 400, { ok: false, error: `Episode range needs exactly ${expected} media IDs; received ${mediaIds.length}` });
-      }
-      if (expected > 200) return send(res, 400, { ok: false, error: "Use batches of 200 episodes or fewer" });
-
-      // Fetch every item before changing GitHub. Timestamp-less (404) items
-      // are skipped individually; uncertain API failures still abort the run.
-      const timestamps = await fetchAllCrunchyroll(mediaIds);
-      const usable = timestamps.filter((item) => item.ok);
-      if (!usable.length) return send(res, 404, { ok: false, error: "None of these media IDs have intro or credits timestamps" });
-      for (let attempt = 0; attempt < 2; attempt += 1) {
-        const loaded = await loadDatabase();
-        let found = findAnime(loaded.database, malId);
-        let createdAnime = false;
-        if (!found) {
-          const created = await animeFromMal(malId);
-          if (loaded.database[created.key] && Number(loaded.database[created.key]?.malId) !== malId) {
-            throw Object.assign(new Error("AniList ID key collision"), { status: 409 });
-          }
-          loaded.database[created.key] = created.value;
-          found = [created.key, loaded.database[created.key]];
-          createdAnime = true;
-        }
-        const [, anime] = found;
-        anime.episodes ||= {};
-        const records = [];
-        const skipped = [];
-        timestamps.forEach((result, index) => {
-          const episode = startEpisode + index;
-          if (!result.ok) {
-            skipped.push({ episode, mediaId: result.mediaId, error: result.error });
-            return;
-          }
-          const item = result.value;
-          const previous = anime.episodes[String(episode)] || {};
-          const record = { ...previous, ...(item.op ? { op: item.op } : {}), ...(item.ed ? { ed: item.ed } : {}) };
-          anime.episodes[String(episode)] = record;
-          records.push({ episode, requestedMediaId: item.requestedMediaId, mediaId: item.mediaId, record, complete: Boolean(record.op && record.ed) });
-        });
-        anime.totalEpisodes = Math.max(Number(anime.totalEpisodes) || 0, endEpisode);
-        try {
-          const sha = await writeDatabase(
-            loaded.database,
-            loaded.treeSha,
-            loaded.headSha,
-            loaded.dataPath,
-            `Update MAL ${malId} episodes ${startEpisode}-${endEpisode} Crunchyroll skip times`
-          );
-          return send(res, 200, { ok: true, action: "bulk-updated", createdAnime, anime: anime.title, malId, startEpisode, endEpisode, count: records.length, records, skipped, commit: sha });
-        } catch (error) {
-          if (error.status !== 422 || attempt === 1) throw error;
-        }
-      }
-    }
-    const episode = episodeNumber(req.body?.episode);
-    const key = episodeKey(req.body?.episode);
-    if (!Number.isInteger(malId) || malId <= 0 || episode === null || key === null) {
-      return send(res, 400, { ok: false, error: "MAL ID must be a positive integer and episode must be a positive number" });
-    }
-    let op = range(req.body?.op, "Opening");
-    let ed = range(req.body?.ed, "Credits");
-    let crunchyroll = null;
-    if (req.body?.mediaId) {
-      crunchyroll = await fetchCrunchyroll(req.body.mediaId);
-      op ||= crunchyroll.op;
-      ed ||= crunchyroll.ed;
-    }
-    if (!op && !ed) return send(res, 400, { ok: false, error: "Provide at least one opening or credits range" });
-
-    // Retry once if another submission moves the branch while this one is writing.
-    for (let attempt = 0; attempt < 2; attempt += 1) {
-      const loaded = await loadDatabase();
-      let found = findAnime(loaded.database, malId);
-      let createdAnime = false;
-      if (!found) {
-        const created = await animeFromMal(malId);
-        if (loaded.database[created.key] && Number(loaded.database[created.key]?.malId) !== malId) {
-          throw Object.assign(new Error("AniList ID key collision"), { status: 409 });
-        }
-        loaded.database[created.key] = created.value;
-        found = [created.key, loaded.database[created.key]];
-        createdAnime = true;
-      }
-      const [, anime] = found;
-      const previous = anime.episodes?.[key] || null;
-      anime.episodes ||= {};
-      anime.episodes[key] = {
-        ...(previous || {}),
-        ...(op ? { op } : {}),
-        ...(ed ? { ed } : {})
-      };
-      anime.totalEpisodes = Math.max(Number(anime.totalEpisodes) || 0, episode);
-
-      try {
-        const action = previous ? "Update" : "Add";
-        const sha = await writeDatabase(
-          loaded.database,
-          loaded.treeSha,
-          loaded.headSha,
-          loaded.dataPath,
-          `${action} MAL ${malId} episode ${episode} skip times`
-        );
-        return send(res, 200, {
-          ok: true,
-          action: previous ? "updated" : "created",
-          createdAnime,
-          anime: anime.title,
-          malId,
-          episode,
-          record: anime.episodes[key],
-          complete: Boolean(anime.episodes[key].op && anime.episodes[key].ed),
-          crunchyroll: crunchyroll ? { requestedMediaId: crunchyroll.requestedMediaId, mediaId: crunchyroll.mediaId } : null,
-          commit: sha
-        });
-      } catch (error) {
-        if (error.status !== 422 || attempt === 1) throw error;
-      }
-    }
   } catch (error) {
-    console.error(error);
-    return send(res, error.status || 500, { ok: false, error: error.message || "Unexpected server error" });
+    return send(res, error.status || 500, { ok: false, error: error.message || 'Unexpected server error' });
   }
 }
+export { env, gh, repoPath, loadDatabase, findAnime, animeFromMal, range, episodeNumber, episodeKey, fetchCrunchyroll, send };

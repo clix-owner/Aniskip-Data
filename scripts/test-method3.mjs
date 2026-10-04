@@ -1,8 +1,7 @@
 import fs from "node:fs";
 import vm from "node:vm";
 
-const html = fs.readFileSync(new URL("../public/index.html", import.meta.url), "utf8");
-const source = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+const source = fs.readFileSync(new URL('../public/app.js', import.meta.url), 'utf8') + '\n' + fs.readFileSync(new URL('../public/extract.js', import.meta.url), 'utf8');
 const elements = new Map();
 const element = id => {
   if (!elements.has(id)) elements.set(id, { id, value: "", textContent: "", innerHTML: "", className: "", disabled: false, dataset: {}, addEventListener(type, callback) { this[`on${type}`] = callback; } });
