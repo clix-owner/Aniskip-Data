@@ -262,5 +262,40 @@
         "mediaId": "GE00377920JAJP"
       }
     ]
+  },
+  {
+    "id": "17cdfea1-bb32-4f55-ad0d-25c5795c2f0d",
+    "at": "2026-10-05T07:37:43.138Z",
+    "malId": 61967,
+    "title": "Black Clover Season 2",
+    "action": "Update",
+    "undoOf": null,
+    "changes": [
+      {
+        "episode": 1,
+        "before": {
+          "op": {
+            "start": 0,
+            "end": 65
+          },
+          "ed": {
+            "start": 1339,
+            "end": 1430
+          }
+        },
+        "after": {
+          "op": {
+            "start": 253,
+            "end": 338
+          },
+          "ed": {
+            "start": 1339,
+            "end": 1430
+          }
+        },
+        "source": "manual",
+        "mediaId": null
+      }
+    ]
   }
 ]
