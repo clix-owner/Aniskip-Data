@@ -904,5 +904,40 @@
         "mediaId": "GG1U23V4D"
       }
     ]
+  },
+  {
+    "id": "0eb16433-8f16-4625-8ce6-5dc390f57480",
+    "at": "2026-10-05T13:22:30.617Z",
+    "malId": 21,
+    "title": "ONE PIECE",
+    "action": "Update",
+    "undoOf": null,
+    "changes": [
+      {
+        "episode": 1,
+        "before": {
+          "op": {
+            "start": 61,
+            "end": 150
+          },
+          "ed": {
+            "start": 1332,
+            "end": 1432
+          }
+        },
+        "after": {
+          "op": {
+            "start": 28.783,
+            "end": 118.783
+          },
+          "ed": {
+            "start": 1387.996,
+            "end": 1500
+          }
+        },
+        "source": "manual",
+        "mediaId": null
+      }
+    ]
   }
 ]
