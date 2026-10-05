@@ -607,5 +607,302 @@
         "mediaId": "GG1U23V4D"
       }
     ]
+  },
+  {
+    "id": "d0389357-7196-451e-a0e6-5b5d98a66473",
+    "at": "2026-10-05T13:15:10.620Z",
+    "malId": 48760,
+    "title": "Skeleton Knight in Another World",
+    "action": "Update",
+    "undoOf": null,
+    "changes": [
+      {
+        "episode": 1,
+        "before": {
+          "op": {
+            "start": 74.277,
+            "end": 162.612
+          },
+          "ed": {
+            "start": 1328,
+            "end": 1421
+          }
+        },
+        "after": {
+          "op": {
+            "start": 61,
+            "end": 150
+          },
+          "ed": {
+            "start": 1332,
+            "end": 1432
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GMKUX83G1"
+      },
+      {
+        "episode": 2,
+        "before": {
+          "op": {
+            "start": 59.292,
+            "end": 146.792
+          },
+          "ed": {
+            "start": 1330.73,
+            "end": 1421
+          }
+        },
+        "after": {
+          "op": {
+            "start": 59,
+            "end": 149
+          },
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GVWU0Q2WN"
+      },
+      {
+        "episode": 3,
+        "before": {
+          "ed": {
+            "start": 1329.458,
+            "end": 1421
+          },
+          "op": {
+            "start": 56.167,
+            "end": 144.917
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          },
+          "op": {
+            "start": 55,
+            "end": 145
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "G31UX02WE"
+      },
+      {
+        "episode": 4,
+        "before": {
+          "op": {
+            "start": 75.792,
+            "end": 164.542
+          },
+          "ed": {
+            "start": 1330.417,
+            "end": 1420.75
+          }
+        },
+        "after": {
+          "op": {
+            "start": 72,
+            "end": 162
+          },
+          "ed": {
+            "start": 1327,
+            "end": 1428
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GPWUK1XZX"
+      },
+      {
+        "episode": 5,
+        "before": {
+          "ed": {
+            "start": 1332,
+            "end": 1420
+          },
+          "op": {
+            "start": 36.417,
+            "end": 126.417
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          },
+          "op": {
+            "start": 37,
+            "end": 127
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "G2XU08V40"
+      },
+      {
+        "episode": 6,
+        "before": {
+          "op": {
+            "start": 55.676,
+            "end": 145.042
+          },
+          "ed": {
+            "start": 1332,
+            "end": 1421
+          }
+        },
+        "after": {
+          "op": {
+            "start": 55,
+            "end": 145
+          },
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "G8WUN4PG7"
+      },
+      {
+        "episode": 7,
+        "before": {
+          "ed": {
+            "start": 1332,
+            "end": 1421
+          },
+          "op": {
+            "start": 80.396,
+            "end": 170.396
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          },
+          "op": {
+            "start": 77,
+            "end": 167
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GZ7UV0M29"
+      },
+      {
+        "episode": 8,
+        "before": {
+          "ed": {
+            "start": 1331,
+            "end": 1420
+          },
+          "op": {
+            "start": 95.375,
+            "end": 184.875
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          },
+          "op": {
+            "start": 95,
+            "end": 178
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GD9UVPGQ0"
+      },
+      {
+        "episode": 9,
+        "before": {
+          "ed": {
+            "start": 1330.083,
+            "end": 1420.083
+          },
+          "op": {
+            "start": 74,
+            "end": 164
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          },
+          "op": {
+            "start": 74,
+            "end": 164
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GQJUGPZVX"
+      },
+      {
+        "episode": 10,
+        "before": {
+          "op": {
+            "start": 120.5,
+            "end": 210
+          },
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          }
+        },
+        "after": {
+          "op": {
+            "start": 118,
+            "end": 208
+          },
+          "ed": {
+            "start": 1328,
+            "end": 1428
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "G50UZ7DXJ"
+      },
+      {
+        "episode": 11,
+        "before": {
+          "op": {
+            "start": 100.694,
+            "end": 191.276
+          },
+          "ed": {
+            "start": 1332,
+            "end": 1420
+          }
+        },
+        "after": {
+          "op": {
+            "start": 100,
+            "end": 190
+          },
+          "ed": {
+            "start": 1330,
+            "end": 1420
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GWDU853E9"
+      },
+      {
+        "episode": 12,
+        "before": null,
+        "after": {
+          "ed": {
+            "start": 1354,
+            "end": 1400
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GG1U23V4D"
+      }
+    ]
   }
 ]
