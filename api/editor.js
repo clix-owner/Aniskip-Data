@@ -123,6 +123,28 @@ export default async function handler(req, res) {
       const malId = Number(req.query.malId);
       return send(res, 200, { ok: true, entries: history.entries.filter(x => !malId || x.malId === malId).slice(-100).reverse() });
     }
+        if (mode === 'sync-new-releases') {
+      const { syncNewReleases } = await import('../scripts/sync-new-releases.mjs');
+      const days = Number(req.query.days || body.days || 5);
+      const result = await syncNewReleases(days, false);
+      return send(res, 200, { ok: true, ...result });
+    }
+    if (mode === 'sync-airing') {
+      const malClientId = process.env.MAL_CLIENT_ID || '';
+      if (!malClientId) throw fail('MAL_CLIENT_ID environment variable is required to sync airing anime', 500);
+      const url = `https://api.myanimelist.net/v2/anime/ranking?ranking_type=airing&limit=25&fields=id,title,alternative_titles,num_episodes,media_type`;
+      const resAiring = await fetch(url, { headers: { 'X-MAL-CLIENT-ID': malClientId.trim() } });
+      if (!resAiring.ok) throw fail(`Failed to fetch airing anime from MAL (${resAiring.status})`, 502);
+      const data = await resAiring.json();
+      const list = (data.data || []).map(e => e.node).filter(m => m && m.id && m.media_type !== 'movie').map(m => {
+        const alt = m.alternative_titles || {};
+        return {
+          malId: m.id,
+          title: (alt.en && alt.en.trim()) ? alt.en.trim() : (m.title || '')
+        };
+      });
+      return send(res, 200, { ok: true, count: list.length, airingList: list });
+    }
     const malId = Number(body.malId ?? req.query.malId);
     if (!Number.isInteger(malId) || malId <= 0) throw fail('A valid MAL ID is required');
     if (mode === 'undo') {
@@ -169,28 +191,7 @@ export default async function handler(req, res) {
       });
       return send(res, 200, await applyRecords(malId, items));
     }
-    if (mode === 'sync-airing') {
-      const malClientId = process.env.MAL_CLIENT_ID || '';
-      if (!malClientId) throw fail('MAL_CLIENT_ID environment variable is required to sync airing anime', 500);
-      const url = `https://api.myanimelist.net/v2/anime/ranking?ranking_type=airing&limit=25&fields=id,title,alternative_titles,num_episodes,media_type`;
-      const resAiring = await fetch(url, { headers: { 'X-MAL-CLIENT-ID': malClientId.trim() } });
-      if (!resAiring.ok) throw fail(`Failed to fetch airing anime from MAL (${resAiring.status})`, 502);
-      const data = await resAiring.json();
-      const list = (data.data || []).map(e => e.node).filter(m => m && m.id && m.media_type !== 'movie').map(m => {
-        const alt = m.alternative_titles || {};
-        return {
-          malId: m.id,
-          title: (alt.en && alt.en.trim()) ? alt.en.trim() : (m.title || '')
-        };
-      });
-      return send(res, 200, { ok: true, count: list.length, airingList: list });
-    }
-    if (mode === 'sync-new-releases') {
-      const { syncNewReleases } = await import('../scripts/sync-new-releases.mjs');
-      const limit = Number(req.query.limit || body.limit || 100);
-      const result = await syncNewReleases(limit, false);
-      return send(res, 200, { ok: true, ...result });
-    }
+    
     // Backward-compatible direct submissions are audited too. The new UI
     // always uses explicit preview/apply with optimistic concurrency.
     if (mode === 'bulk') throw fail('Use the new preview import to save bulk records');
