@@ -5,57 +5,79 @@ import { getCrunchyrollToken, fetchCrunchyrollSkip, titleSimilarity } from "./au
 const DB_PATH = path.resolve("data/aniskip_data.json");
 const HISTORY_PATH = path.resolve("data/editor-history.json");
 
-// 1. Fetch newly released episodes feed directly from Crunchyroll (videos/new)
-export async function fetchCrunchyrollNewReleases(limit = 100) {
+// 1. Fetch newly released episodes from Crunchyroll with a strict 5-day cutoff window & zero duplicates
+export async function fetchCrunchyrollNewReleases(days = 5, maxPages = 10) {
   const token = await getCrunchyrollToken();
-  const url = `https://beta-api.crunchyroll.com/content/v2/discover/browse?sort_by=newly_added&type=episode&n=${limit}`;
-  const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
-  if (!res.ok) throw new Error(`Crunchyroll newly_added feed error: ${res.status}`);
-  const data = await res.json();
-  const rawEpisodes = data.data || [];
+  const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
+  console.log(`[SYNC-5D] Fetching Crunchyroll new releases from the past ${days} days (cutoff: ${cutoff.toISOString()})...`);
 
-  const unique = [];
+  const uniqueEpisodes = [];
   const seen = new Set();
+  let page = 0;
 
-  for (const ep of rawEpisodes) {
-    const meta = ep.episode_metadata || {};
-    const epNum = Number(meta.episode_number ?? meta.episode);
-    const seriesTitle = meta.series_title;
-    if (!Number.isInteger(epNum) || epNum <= 0 || !seriesTitle) continue;
+  for (let start = 0; page < maxPages; start += 100, page++) {
+    const url = `https://beta-api.crunchyroll.com/content/v2/discover/browse?sort_by=newly_added&type=episode&n=100&start=${start}`;
+    const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!res.ok) {
+      console.warn(`[SYNC-5D] Page ${page + 1} fetch stopped with status ${res.status}`);
+      break;
+    }
+    const data = await res.json();
+    const batch = data.data || [];
+    if (!batch.length) break;
 
-    // Filter out obvious specials/recaps
-    const epLabel = String(meta.episode || "").toUpperCase();
-    if (epLabel.includes("SP") || epLabel === "RECAP" || epLabel === "SPECIAL") continue;
+    let reachedPastCutoff = false;
 
-    // Find original / Japanese version guid
-    const versions = Array.isArray(meta.versions) ? meta.versions : [];
-    const orig = versions.find(v => v.original === true) || versions.find(v => v.audio_locale === "ja-JP");
-    const mediaId = String(orig?.guid || ep.id).trim();
-    if (!mediaId) continue;
+    for (const ep of batch) {
+      const meta = ep.episode_metadata || {};
+      const epNum = Number(meta.episode_number ?? meta.episode);
+      const seriesTitle = meta.series_title;
+      if (!Number.isInteger(epNum) || epNum <= 0 || !seriesTitle) continue;
 
-    const key = `${seriesTitle}_S${meta.season_number || 1}_E${epNum}`;
-    if (!seen.has(key)) {
-      seen.add(key);
-      unique.push({
+      // Filter out specials and recaps
+      const epLabel = String(meta.episode || "").toUpperCase();
+      if (epLabel.includes("SP") || epLabel === "RECAP" || epLabel === "SPECIAL") continue;
+
+      // Release date check against 5 days window
+      const dateStr = meta.premium_available_date || meta.upload_date;
+      if (dateStr && new Date(dateStr) < cutoff) {
+        reachedPastCutoff = true;
+        continue;
+      }
+
+      // Unique Canonical Key (Series + Season + EpisodeNumber) - prevents ANY duplicate
+      const canonicalKey = `${seriesTitle.toLowerCase().trim()}_s${meta.season_number || 1}_e${epNum}`;
+      if (seen.has(canonicalKey)) continue;
+      seen.add(canonicalKey);
+
+      // Extract Japanese original track / guid
+      const versions = Array.isArray(meta.versions) ? meta.versions : [];
+      const orig = versions.find(v => v.original === true) || versions.find(v => v.audio_locale === "ja-JP");
+      const mediaId = String(orig?.guid || ep.id).trim();
+      if (!mediaId) continue;
+
+      uniqueEpisodes.push({
         mediaId,
         seriesTitle,
         seasonTitle: meta.season_title || "",
         seasonNumber: meta.season_number || 1,
         episodeNumber: epNum,
-        title: ep.title || `Episode ${epNum}`
+        title: ep.title || `Episode ${epNum}`,
+        date: dateStr
       });
+    }
+
+    if (reachedPastCutoff && page >= 3) {
+      console.log(`[SYNC-5D] Reached beyond ${days}-day release threshold at page ${page + 1}.`);
+      break;
     }
   }
 
-  return unique;
+  return uniqueEpisodes;
 }
 
 // 2. Resolve MAL ID for Series Title using Local Database or Official MAL Search
 export async function resolveMalIdForSeries(seriesTitle, localDb) {
-  // Check local database first
-  const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, " ").trim();
-  const target = norm(seriesTitle);
-
   let bestMatch = null;
   let highestScore = 0;
 
@@ -72,7 +94,7 @@ export async function resolveMalIdForSeries(seriesTitle, localDb) {
     return { malId: bestMatch.malId, title: bestMatch.title, stored: true };
   }
 
-  // If not found in local DB and MAL_CLIENT_ID exists, search official MAL API
+  // Official MyAnimeList (MAL) API v2 fallback if MAL_CLIENT_ID exists
   const malClientId = process.env.MAL_CLIENT_ID || "";
   if (malClientId) {
     try {
@@ -99,11 +121,10 @@ export async function resolveMalIdForSeries(seriesTitle, localDb) {
   return null;
 }
 
-// 3. Sync New Releases (Batch 100)
-export async function syncNewReleases(limit = 100, dryRun = false) {
-  console.log(`[SYNC-NEW] Fetching latest ${limit} episodes from Crunchyroll (videos/new)...`);
-  const episodes = await fetchCrunchyrollNewReleases(limit);
-  console.log(`[SYNC-NEW] Filtered ${episodes.length} unique canonical episodes.`);
+// 3. Sync All 5-Day Releases into aniskip_data.json
+export async function syncNewReleases(days = 5, dryRun = false) {
+  const episodes = await fetchCrunchyrollNewReleases(days);
+  console.log(`[SYNC-5D] Found ${episodes.length} unique canonical episodes released in the last ${days} days.`);
 
   const db = JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
   let addedCount = 0;
@@ -112,9 +133,7 @@ export async function syncNewReleases(limit = 100, dryRun = false) {
   for (const ep of episodes) {
     try {
       const match = await resolveMalIdForSeries(ep.seriesTitle, db);
-      if (!match) {
-        continue; // Could not safely align with a MAL anime
-      }
+      if (!match) continue; // Skip if no high-confidence MAL match
 
       let animeEntry = db[String(match.malId)];
       if (!animeEntry) {
@@ -131,16 +150,15 @@ export async function syncNewReleases(limit = 100, dryRun = false) {
 
       const epKey = String(ep.episodeNumber);
       if (animeEntry.episodes[epKey]) {
-        continue; // Already has timestamps for this episode
+        continue; // Already ingested
       }
 
-      // Fetch skip timestamps from Crunchyroll Official CDN
       const skip = await fetchCrunchyrollSkip(ep.mediaId);
       if (!skip) {
-        continue; // No skip events tagged on CDN yet
+        continue; // No skip events available yet on CDN
       }
 
-      console.log(`  [+] New Episode Ingested: ${match.title} (MAL ${match.malId}) Ep ${ep.episodeNumber} (${ep.mediaId}) -> OP: ${Boolean(skip.op)}, ED: ${Boolean(skip.ed)}`);
+      console.log(`  [+] Ingested 5-day release: ${match.title} (MAL ${match.malId}) Ep ${ep.episodeNumber} -> OP: ${Boolean(skip.op)}, ED: ${Boolean(skip.ed)}`);
       if (!dryRun) {
         animeEntry.episodes[epKey] = skip;
       }
@@ -168,32 +186,32 @@ export async function syncNewReleases(limit = 100, dryRun = false) {
       } catch {}
     }
     history.unshift({
-      id: `new_releases_${Date.now()}`,
+      id: `new_5days_${Date.now()}`,
       at: new Date().toISOString(),
-      action: "auto/crunchyroll-new-releases",
+      action: `auto/crunchyroll-5days-sync`,
       count: addedCount,
       changes: changes.map(c => ({
         malId: c.malId,
         title: c.title,
         episode: c.episode,
         mediaId: c.mediaId,
-        source: "crunchyroll/videos-new",
+        source: "crunchyroll/videos-new-5days",
         after: "synced timestamps"
       }))
     });
     if (history.length > 250) history = history.slice(0, 250);
     fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2), "utf8");
-    console.log(`[SYNC-NEW] Saved ${addedCount} new episode skip timestamps to database.`);
+    console.log(`[SYNC-5D] Successfully saved ${addedCount} newly released episodes to database.`);
   } else {
-    console.log(`[SYNC-NEW] Database is already up to date with Crunchyroll new releases.`);
+    console.log(`[SYNC-5D] Database is already fully up to date with past ${days} days releases.`);
   }
 
-  return { addedCount, totalChecked: episodes.length };
+  return { addedCount, totalChecked: episodes.length, days };
 }
 
 // Self-run when invoked directly
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve("scripts/sync-new-releases.mjs")) {
-  syncNewReleases(100).catch(err => {
+  syncNewReleases(5).catch(err => {
     console.error("[FATAL] sync-new-releases error:", err);
     process.exit(1);
   });

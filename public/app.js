@@ -59,10 +59,10 @@ document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>showTab(b.datas
 $('load').onclick=loadQueue;
 if($('syncNewBtn'))$('syncNewBtn').onclick=async()=>{
   try{
-    status('Fetching latest 100 new episodes directly from Crunchyroll (videos/new)...',true);
+    status('Fetching all new releases from the past 5 days directly from Crunchyroll (zero duplicates)...',true);
     $('syncNewBtn').disabled=true;
-    const res=await api('sync-new-releases',null,{limit:100});
-    status(`Crunchyroll New Releases Sync complete! Ingested ${res.addedCount} new episode(s) across ${res.totalChecked} checked.`,true);
+    const res=await api('sync-new-releases',null,{days:5});
+    status(`5-Day New Releases Sync complete! Ingested ${res.addedCount} new episode(s) across ${res.totalChecked} checked.`,true);
   }catch(e){status(e.message);}finally{$('syncNewBtn').disabled=false;}
 };
 if($('syncAiringBtn'))$('syncAiringBtn').onclick=async()=>{
