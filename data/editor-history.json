@@ -1,0 +1,312 @@
+[
+  {
+    "id": "0b59c3cc-83f4-4bb4-aa24-68e7ecf0473a",
+    "at": "2026-10-27T11:29:19.896Z",
+    "malId": 40748,
+    "title": "JUJUTSU KAISEN",
+    "action": "Update",
+    "undoOf": null,
+    "changes": [
+      {
+        "episode": 1,
+        "before": {
+          "op": {
+            "start": 54,
+            "end": 142
+          },
+          "ed": {
+            "start": 1354,
+            "end": 1433
+          }
+        },
+        "after": {
+          "op": {
+            "start": 213,
+            "end": 312
+          },
+          "ed": {
+            "start": 1328,
+            "end": 1418
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367568JAJP"
+      },
+      {
+        "episode": 2,
+        "before": {
+          "ed": {
+            "start": 1334,
+            "end": 1432
+          },
+          "op": {
+            "start": 344,
+            "end": 432
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1329,
+            "end": 1419
+          },
+          "op": {
+            "start": 0,
+            "end": 88
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367569JAJP"
+      },
+      {
+        "episode": 3,
+        "before": {
+          "op": {
+            "start": 191,
+            "end": 279
+          },
+          "ed": {
+            "start": 1275,
+            "end": 1362
+          }
+        },
+        "after": {
+          "op": {
+            "start": 0,
+            "end": 88
+          },
+          "ed": {
+            "start": 1329,
+            "end": 1419
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367570JAJP"
+      },
+      {
+        "episode": 4,
+        "before": {
+          "op": {
+            "start": 174,
+            "end": 262
+          },
+          "ed": {
+            "start": 1274,
+            "end": 1362
+          }
+        },
+        "after": {
+          "op": {
+            "start": 0,
+            "end": 88
+          },
+          "ed": {
+            "start": 1578,
+            "end": 1669
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367571JAJP"
+      },
+      {
+        "episode": 5,
+        "before": {
+          "ed": {
+            "start": 1273,
+            "end": 1362
+          },
+          "op": {
+            "start": 142,
+            "end": 231
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1325,
+            "end": 1413
+          },
+          "op": {
+            "start": 379,
+            "end": 467
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367572JAJP"
+      },
+      {
+        "episode": 6,
+        "before": {
+          "ed": {
+            "start": 1304,
+            "end": 1393
+          },
+          "op": {
+            "start": 33,
+            "end": 121
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1329,
+            "end": 1433
+          },
+          "op": {
+            "start": 196,
+            "end": 287
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367573JAJP"
+      },
+      {
+        "episode": 7,
+        "before": {
+          "op": {
+            "start": 129,
+            "end": 217
+          },
+          "ed": {
+            "start": 1273,
+            "end": 1362
+          }
+        },
+        "after": {
+          "op": {
+            "start": 181,
+            "end": 271
+          },
+          "ed": {
+            "start": 1329,
+            "end": 1419
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367574JAJP"
+      },
+      {
+        "episode": 8,
+        "before": {
+          "ed": {
+            "start": 1217,
+            "end": 1306
+          },
+          "op": {
+            "start": 198,
+            "end": 286
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1329,
+            "end": 1413
+          },
+          "op": {
+            "start": 0,
+            "end": 88
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367575JAJP"
+      },
+      {
+        "episode": 9,
+        "before": {
+          "ed": {
+            "start": 1304,
+            "end": 1393
+          },
+          "op": {
+            "start": 275,
+            "end": 363
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1224,
+            "end": 1319
+          },
+          "op": {
+            "start": 0,
+            "end": 90
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367576JAJP"
+      },
+      {
+        "episode": 10,
+        "before": {
+          "ed": {
+            "start": 1274,
+            "end": 1363
+          },
+          "op": {
+            "start": 169,
+            "end": 257
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1314,
+            "end": 1398
+          },
+          "op": {
+            "start": 0,
+            "end": 88
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367577JAJP"
+      },
+      {
+        "episode": 11,
+        "before": {
+          "ed": {
+            "start": 1318,
+            "end": 1407
+          },
+          "op": {
+            "start": 136,
+            "end": 224
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1314,
+            "end": 1418
+          },
+          "op": {
+            "start": 269,
+            "end": 358
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367578JAJP"
+      },
+      {
+        "episode": 12,
+        "before": {
+          "ed": {
+            "start": 1273,
+            "end": 1362
+          },
+          "op": {
+            "start": 116,
+            "end": 204
+          }
+        },
+        "after": {
+          "ed": {
+            "start": 1619,
+            "end": 1708
+          },
+          "op": {
+            "start": 600,
+            "end": 797
+          }
+        },
+        "source": "crunchyroll",
+        "mediaId": "GE00367579JAJP"
+      }
+    ]
+  }
+]
