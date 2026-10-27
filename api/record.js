@@ -56,57 +56,40 @@ function findAnime(database, malId) {
 
 async function animeFromMal(malId) {
   const malClientId = process.env.MAL_CLIENT_ID || "";
+  if (!malClientId) {
+    throw Object.assign(new Error("MAL_CLIENT_ID is required to query official MyAnimeList API"), { status: 500 });
+  }
   let title = "";
   let totalEpisodes = 0;
   let format = "TV";
-  let anilistId = null;
 
-  // Tier 1: Try Official MyAnimeList (MAL) API v2 if MAL_CLIENT_ID is provided
-  if (malClientId) {
-    try {
-      const malUrl = `https://api.myanimelist.net/v2/anime/${malId}?fields=id,title,alternative_titles,num_episodes,media_type`;
-      const malRes = await fetch(malUrl, {
-        headers: { "X-MAL-CLIENT-ID": malClientId.trim() }
-      });
-      if (malRes.ok) {
-        const malData = await malRes.json();
-        const alt = malData.alternative_titles || {};
-        title = (alt.en && alt.en.trim()) ? alt.en.trim() : (malData.title || "");
-        totalEpisodes = malData.num_episodes || 0;
-        format = (malData.media_type || "TV").toUpperCase();
-      }
-    } catch (e) {
-      console.warn("Official MAL API error, falling back to AniList:", e.message);
+  try {
+    const malUrl = `https://api.myanimelist.net/v2/anime/${malId}?fields=id,title,alternative_titles,num_episodes,media_type`;
+    const malRes = await fetch(malUrl, {
+      headers: { "X-MAL-CLIENT-ID": malClientId.trim() }
+    });
+    if (malRes.ok) {
+      const malData = await malRes.json();
+      const alt = malData.alternative_titles || {};
+      title = (alt.en && alt.en.trim()) ? alt.en.trim() : (malData.title || "");
+      totalEpisodes = malData.num_episodes || 0;
+      format = (malData.media_type || "TV").toUpperCase();
+    } else {
+      const err = await malRes.json().catch(() => ({}));
+      throw new Error(err.message || `MAL API returned ${malRes.status}`);
     }
+  } catch (e) {
+    throw Object.assign(new Error(`Official MyAnimeList API error for ID ${malId}: ${e.message}`), { status: 404 });
   }
 
-  // Tier 2: AniList GraphQL Fallback (also resolves AniList ID)
-  try {
-    const query = `query ($idMal: Int) { Media(idMal: $idMal, type: ANIME) { id idMal format episodes title { romaji english } } }`;
-    const response = await fetch("https://graphql.anilist.co", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({ query, variables: { idMal: malId } })
-    });
-    if (response.ok) {
-      const media = (await response.json())?.data?.Media;
-      if (media) {
-        anilistId = media.id;
-        if (!title) title = media.title?.english || media.title?.romaji;
-        if (!totalEpisodes) totalEpisodes = media.episodes || 0;
-        if (format === "TV" && media.format) format = media.format;
-      }
-    }
-  } catch (e) {}
-
   if (!title) {
-    throw Object.assign(new Error(`No anime found for MAL ID ${malId}`), { status: 404 });
+    throw Object.assign(new Error(`No anime found on MyAnimeList for MAL ID ${malId}`), { status: 404 });
   }
 
   return {
-    key: String(anilistId || malId),
+    key: String(malId),
     value: {
-      anilistId: anilistId || malId,
+      anilistId: malId,
       malId,
       title: title || `MAL ${malId}`,
       format: format || "TV",

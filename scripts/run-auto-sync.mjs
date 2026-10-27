@@ -13,38 +13,36 @@ import {
 const DB_PATH = path.resolve("data/aniskip_data.json");
 const HISTORY_PATH = path.resolve("data/editor-history.json");
 
-// Discover currently airing anime from AniList (with MAL IDs)
-async function fetchAiringAnime(page = 1, perPage = 30) {
-  const query = `
-    query ($page: Int, $perPage: Int) {
-      Page(page: $page, perPage: $perPage) {
-        media(status: RELEASING, type: ANIME, sort: POPULARITY_DESC) {
-          id
-          idMal
-          title { romaji english }
-          format
-          episodes
-        }
-      }
-    }
-  `;
+// Discover currently airing anime from Official MAL API v2
+async function fetchAiringAnime(limit = 50) {
+  const malClientId = process.env.MAL_CLIENT_ID || "";
+  if (!malClientId) {
+    console.error("[CRON] MAL_CLIENT_ID is not configured in environment.");
+    return [];
+  }
   try {
-    const res = await fetch("https://graphql.anilist.co", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query, variables: { page, perPage } })
+    const url = `https://api.myanimelist.net/v2/anime/ranking?ranking_type=airing&limit=${limit}&fields=id,title,alternative_titles,num_episodes,media_type`;
+    const res = await fetch(url, {
+      headers: { "X-MAL-CLIENT-ID": malClientId.trim() }
     });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      console.error("[CRON] MAL ranking API failed:", res.status);
+      return [];
+    }
     const data = await res.json();
-    return (data?.data?.Page?.media || [])
-      .filter(m => m.idMal && m.format !== "MOVIE")
-      .map(m => ({
-        malId: m.idMal,
-        title: m.title?.english || m.title?.romaji,
-        format: m.format
-      }));
+    return (data.data || [])
+      .map(entry => entry.node)
+      .filter(m => m && m.id && m.media_type !== "movie")
+      .map(m => {
+        const alt = m.alternative_titles || {};
+        return {
+          malId: m.id,
+          title: (alt.en && alt.en.trim()) ? alt.en.trim() : (m.title || ""),
+          format: (m.media_type || "TV").toUpperCase()
+        };
+      });
   } catch (err) {
-    console.error("[CRON] Error fetching airing anime:", err.message);
+    console.error("[CRON] Error fetching airing anime from MAL:", err.message);
     return [];
   }
 }

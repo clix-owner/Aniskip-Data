@@ -57,6 +57,39 @@ async function loadQueue() { try { const response=await fetch('/api/record?'+new
 function showTab(name){ document.querySelectorAll('.tab').forEach(el=>el.hidden=el.id!==name);document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name)); }
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
 $('load').onclick=loadQueue;
+if($('syncAiringBtn'))$('syncAiringBtn').onclick=async()=>{
+  try{
+    status('Fetching currently airing anime from MyAnimeList...',true);
+    $('syncAiringBtn').disabled=true;
+    const data=await api('sync-airing',null);
+    const list=data.airingList||[];
+    if(!list.length)throw Error('No airing anime found or MAL_CLIENT_ID missing in backend.');
+    status(`Discovered ${list.length} airing shows on MAL. Checking Crunchyroll...`,true);
+    let totalUpdated=0;
+    for(const anime of list){
+      try{
+        status(`Syncing: ${anime.title} (MAL ${anime.malId})...`,true);
+        // check if missing episodes
+        const mRes=await fetch('/api/record?'+new URLSearchParams({mode:'missing',malId:anime.malId}));
+        if(mRes.ok){
+          const mData=await mRes.json();
+          // Has missing episodes? Auto resolve season
+          if(mData.items?.length){
+            const sRes=await fetch('/api/record?'+new URLSearchParams({mode:'crunchyroll-resolve',malId:anime.malId,title:anime.title}));
+            if(sRes.ok){
+              const sData=await sRes.json();
+              if(sData.seasons?.length){
+                // found season
+                totalUpdated++;
+              }
+            }
+          }
+        }
+      }catch(err){}
+    }
+    status(`Airing Sync complete! Checked ${list.length} titles from MyAnimeList.`,true);
+  }catch(e){status(e.message);}finally{$('syncAiringBtn').disabled=false;}
+};
 $('searchTitle').onclick=async()=>{try{const data=await api('search',null,{q:$('titleQuery').value,remote:$('remoteSearch').checked?'1':'0'});$('searchResults').innerHTML=data.results.map((r,i)=>`<button data-result="${i}">${escapeHtml(r.title)} · MAL ${r.malId}${r.stored?'':' · new'}</button>`).join('')||'<p>No titles found.</p>';$('searchResults').querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=data.results[Number(b.dataset.result)];$('malId').value=r.malId;$('animeTitle').textContent=r.title;loadedEpisode=null;queue=[];fillRecord(null);renderQueue();});}catch(e){status(e.message);}};
 $('checkExisting').onclick=async()=>{try{const episode=Number($('episode').value);const record=await lookup(episode);loadedEpisode={malId:mal(),episode,record};fillRecord(record);status('Existing record loaded.',true);}catch(e){status(e.message);}};
 $('fetchCrunchyroll').onclick=async()=>{try{const response=await fetch('/api/record?'+new URLSearchParams({mode:'crunchyroll',mediaId:$('mediaId').value}));const data=await response.json();if(!response.ok)throw Error(data.error);for(const f of ['op','ed'])if(data[f]){$(f+'Start').value=data[f].start;$(f+'End').value=data[f].end;$(f+'Absent').checked=false;syncAbsent(f);}status('Timestamps loaded. Review before saving.',true);}catch(e){status(e.message);}};

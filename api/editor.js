@@ -49,7 +49,7 @@ export async function applyRecords(malId, items, action = 'Update', undoOf = nul
     let found = findAnime(loaded.database, malId);
     if (!found) {
       const created = await animeFromMal(malId);
-      if (loaded.database[created.key] && loaded.database[created.key].malId !== malId) throw fail('AniList ID collision', 409);
+      if (loaded.database[created.key] && loaded.database[created.key].malId !== malId) throw fail('MAL ID collision', 409);
       found = [created.key, created.value]; loaded.database[created.key] = created.value;
     }
     const anime = found[1]; anime.episodes ||= {};
@@ -86,12 +86,9 @@ export default async function handler(req, res) {
       const results = Object.values(database).filter(a => a.title?.toLowerCase().includes(query.toLowerCase())).slice(0, 30).map(a => ({ malId: a.malId, anilistId: a.anilistId, title: a.title, totalEpisodes: a.totalEpisodes, stored: true }));
       if (req.query.remote === '1') {
         const malClientId = process.env.MAL_CLIENT_ID || '';
-        let fetchedMal = false;
-
-        // Tier 1: Official MyAnimeList (MAL) API v2 Search
         if (malClientId) {
           try {
-            const malUrl = `https://api.myanimelist.net/v2/anime?q=${encodeURIComponent(query)}&limit=15&fields=id,title,alternative_titles,num_episodes`;
+            const malUrl = `https://api.myanimelist.net/v2/anime?q=${encodeURIComponent(query)}&limit=20&fields=id,title,alternative_titles,num_episodes`;
             const malRes = await fetch(malUrl, {
               headers: { 'X-MAL-CLIENT-ID': malClientId.trim() },
               signal: AbortSignal.timeout(8000)
@@ -113,26 +110,10 @@ export default async function handler(req, res) {
                   });
                 }
               }
-              fetchedMal = true;
             }
           } catch (me) {
-            console.warn('Official MAL search fallback to AniList:', me.message);
+            console.warn('Official MAL search error:', me.message);
           }
-        }
-
-        // Tier 2: AniList GraphQL Search
-        if (!fetchedMal || results.length < 5) {
-          try {
-            const response = await fetch('https://graphql.anilist.co', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(10000), body: JSON.stringify({ query: 'query($search:String){Page(perPage:20){media(search:$search,type:ANIME){id idMal episodes title{english romaji}}}}', variables: { search: query } }) });
-            if (response.ok) {
-              const data = await response.json();
-              for (const a of data.data?.Page?.media || []) {
-                if (a.idMal && !results.some(x => x.malId === a.idMal)) {
-                  results.push({ malId: a.idMal, anilistId: a.id, title: a.title.english || a.title.romaji, totalEpisodes: a.episodes, stored: false });
-                }
-              }
-            }
-          } catch (ae) {}
         }
       }
       return send(res, 200, { ok: true, results });
@@ -187,6 +168,22 @@ export default async function handler(req, res) {
         return { episode, expected: item.expected, patch, source: item.source, mediaId: item.mediaId };
       });
       return send(res, 200, await applyRecords(malId, items));
+    }
+    if (mode === 'sync-airing') {
+      const malClientId = process.env.MAL_CLIENT_ID || '';
+      if (!malClientId) throw fail('MAL_CLIENT_ID environment variable is required to sync airing anime', 500);
+      const url = `https://api.myanimelist.net/v2/anime/ranking?ranking_type=airing&limit=25&fields=id,title,alternative_titles,num_episodes,media_type`;
+      const resAiring = await fetch(url, { headers: { 'X-MAL-CLIENT-ID': malClientId.trim() } });
+      if (!resAiring.ok) throw fail(`Failed to fetch airing anime from MAL (${resAiring.status})`, 502);
+      const data = await resAiring.json();
+      const list = (data.data || []).map(e => e.node).filter(m => m && m.id && m.media_type !== 'movie').map(m => {
+        const alt = m.alternative_titles || {};
+        return {
+          malId: m.id,
+          title: (alt.en && alt.en.trim()) ? alt.en.trim() : (m.title || '')
+        };
+      });
+      return send(res, 200, { ok: true, count: list.length, airingList: list });
     }
     // Backward-compatible direct submissions are audited too. The new UI
     // always uses explicit preview/apply with optimistic concurrency.

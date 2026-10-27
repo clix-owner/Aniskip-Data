@@ -3,7 +3,7 @@ import { range, fetchCrunchyroll } from '../api/record.js';
 import recordHandler from '../api/record.js';
 import editor, { mergeRecord, complete, same } from '../api/editor.js';
 
-Object.assign(process.env, { GITHUB_TOKEN: 'test-token', GITHUB_OWNER:'test', GITHUB_REPO:'test', GITHUB_BRANCH:'main', GITHUB_DATA_PATH:'data/aniskip_data.json', ADMIN_KEY:'test-admin', GITHUB_HISTORY_PATH:'data/editor-history.json' });
+Object.assign(process.env, { GITHUB_TOKEN: 'test-token', GITHUB_OWNER:'test', GITHUB_REPO:'test', GITHUB_BRANCH:'main', GITHUB_DATA_PATH:'data/aniskip_data.json', ADMIN_KEY:'test-admin', GITHUB_HISTORY_PATH:'data/editor-history.json', MAL_CLIENT_ID: 'test-mal-client' });
 let tests=0;
 function check(name, fn){fn();tests++;console.log('PASS',name);}
 const op={start:0,end:90}, ed={start:1200,end:1290};
@@ -19,7 +19,8 @@ trees.set('tree0',[{path:'data/aniskip_data.json',type:'blob',sha:blob(initial)}
 let upstream=200, failRef=0;
 globalThis.fetch=async (url,options={})=>{
   if(String(url).includes('static.crunchyroll.com'))return upstream===200?new Response(JSON.stringify({intro:op,credits:ed}),{status:200}):new Response('{}',{status:upstream});
-  if(String(url).includes('graphql.anilist.co'))return new Response(JSON.stringify({data:{Page:{media:[{id:2,idMal:2,episodes:12,title:{english:'New Anime'}}]},Media:{id:2,idMal:2,episodes:12,format:'TV',title:{english:'New Anime'}}}}));
+  if(String(url).includes('api.myanimelist.net/v2/anime?q='))return new Response(JSON.stringify({data:[{node:{id:2,title:'New Anime',alternative_titles:{en:'New Anime'},num_episodes:12}}]}));
+  if(String(url).includes('api.myanimelist.net/v2/anime/'))return new Response(JSON.stringify({id:2,title:'New Anime',alternative_titles:{en:'New Anime'},num_episodes:12,media_type:'tv'}));
   const path=new URL(url).pathname.replace('/repos/test/test',''), body=options.body?JSON.parse(options.body):null;
   let data;
   if(path==='/git/ref/heads/main')data={object:{sha:head}};
