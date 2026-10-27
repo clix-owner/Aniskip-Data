@@ -73,12 +73,20 @@ if($('autoFetchEpisode'))$('autoFetchEpisode').onclick=async()=>{
     const rRes=await fetch('/api/record?'+sQuery);
     const rData=await rRes.json();
     if(!rRes.ok||!rData.seasons?.length)throw Error(rData.error||'Could not resolve Crunchyroll series/season');
-    const seasonId=rData.seasons[0].id;
-    status('Fetching season episodes...',true);
-    const epRes=await fetch('/api/record?'+new URLSearchParams({mode:'crunchyroll-season',seasonId}));
-    const epData=await epRes.json();
-    if(!epRes.ok||!epData.episodes?.length)throw Error(epData.error||'No episodes found for this season');
-    const match=epData.episodes.find(e=>Number(e.episode_number??e.sequence_number??e.episode)===ep);
+    status(`Searching across ${rData.seasons.length} seasons for episode ${ep}...`,true);
+    let match = null;
+    // Iterate from newest season backwards to find the episode quickly
+    const seasonsToCheck = [...rData.seasons].reverse();
+    for (const s of seasonsToCheck) {
+      try {
+        const epRes = await fetch('/api/record?' + new URLSearchParams({ mode: 'crunchyroll-season', seasonId: s.id }));
+        const epData = await epRes.json();
+        if (epRes.ok && Array.isArray(epData.episodes)) {
+          const found = epData.episodes.find(e => Number(e.episode_number ?? e.sequence_number ?? e.episode) === ep);
+          if (found) { match = found; break; }
+        }
+      } catch (err) {}
+    }
     if(!match)throw Error(`Episode ${ep} not found in Crunchyroll season.`);
     const versions=Array.isArray(match.versions)?match.versions:[];
     const orig=versions.find(v=>v?.original===true&&String(v?.guid||'').trim())||versions.find(v=>v?.audio_locale==='ja-JP'&&String(v?.guid||'').trim());
