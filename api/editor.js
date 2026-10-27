@@ -126,8 +126,37 @@ export default async function handler(req, res) {
         if (mode === 'sync-new-releases') {
       const { syncNewReleases } = await import('../scripts/sync-new-releases.mjs');
       const days = Number(req.query.days || body.days || 5);
-      const result = await syncNewReleases(days, false);
-      return send(res, 200, { ok: true, ...result });
+      const loaded = await loadDatabase();
+      const result = await syncNewReleases(days, false, loaded.database);
+
+      // If changes were made, commit directly to GitHub repository (works seamlessly in Vercel serverless)
+      let commitSha = null;
+      if (result.addedCount > 0) {
+        const history = await historyAt(loaded.treeSha);
+        const historyEntry = {
+          id: `new_5days_${Date.now()}`,
+          at: new Date().toISOString(),
+          action: 'auto/crunchyroll-5days-sync',
+          malId: result.changes[0]?.malId || 0,
+          count: result.addedCount,
+          changes: result.changes.map(c => ({
+            episode: c.episode,
+            source: 'crunchyroll/videos-new-5days',
+            before: null,
+            after: 'synced timestamps'
+          }))
+        };
+        loaded.database = result.updatedDatabase;
+        commitSha = await commitChanges(loaded, history, historyEntry);
+      }
+
+      return send(res, 200, {
+        ok: true,
+        addedCount: result.addedCount,
+        totalChecked: result.totalChecked,
+        days: result.days,
+        commit: commitSha
+      });
     }
     if (mode === 'sync-airing') {
       const malClientId = process.env.MAL_CLIENT_ID || '';

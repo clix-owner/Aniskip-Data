@@ -122,11 +122,18 @@ export async function resolveMalIdForSeries(seriesTitle, localDb) {
 }
 
 // 3. Sync All 5-Day Releases into aniskip_data.json
-export async function syncNewReleases(days = 5, dryRun = false) {
+export async function syncNewReleases(days = 5, dryRun = false, initialDb = null) {
   const episodes = await fetchCrunchyrollNewReleases(days);
   console.log(`[SYNC-5D] Found ${episodes.length} unique canonical episodes released in the last ${days} days.`);
 
-  const db = JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
+  let db = initialDb;
+  if (!db) {
+    try {
+      db = JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
+    } catch {
+      db = {};
+    }
+  }
   let addedCount = 0;
   const changes = [];
 
@@ -175,38 +182,42 @@ export async function syncNewReleases(days = 5, dryRun = false) {
   }
 
   if (addedCount > 0 && !dryRun) {
-    fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2), "utf8");
+    try {
+      fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2), "utf8");
 
-    // Write audit history
-    let history = [];
-    if (fs.existsSync(HISTORY_PATH)) {
-      try {
-        const parsed = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
-        history = Array.isArray(parsed) ? parsed : (Array.isArray(parsed?.entries) ? parsed.entries : []);
-      } catch {}
+      let history = [];
+      if (fs.existsSync(HISTORY_PATH)) {
+        try {
+          const parsed = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
+          history = Array.isArray(parsed) ? parsed : (Array.isArray(parsed?.entries) ? parsed.entries : []);
+        } catch {}
+      }
+      history.unshift({
+        id: `new_5days_${Date.now()}`,
+        at: new Date().toISOString(),
+        action: `auto/crunchyroll-5days-sync`,
+        count: addedCount,
+        changes: changes.map(c => ({
+          malId: c.malId,
+          title: c.title,
+          episode: c.episode,
+          mediaId: c.mediaId,
+          source: "crunchyroll/videos-new-5days",
+          after: "synced timestamps"
+        }))
+      });
+      if (history.length > 250) history = history.slice(0, 250);
+      fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2), "utf8");
+      console.log(`[SYNC-5D] Successfully saved ${addedCount} newly released episodes to local disk.`);
+    } catch (e) {
+      // In Vercel serverless (/var/task), local disk is read-only.
+      console.log(`[SYNC-5D] Local disk is read-only (${e.message}). Changes returned for GitHub commit.`);
     }
-    history.unshift({
-      id: `new_5days_${Date.now()}`,
-      at: new Date().toISOString(),
-      action: `auto/crunchyroll-5days-sync`,
-      count: addedCount,
-      changes: changes.map(c => ({
-        malId: c.malId,
-        title: c.title,
-        episode: c.episode,
-        mediaId: c.mediaId,
-        source: "crunchyroll/videos-new-5days",
-        after: "synced timestamps"
-      }))
-    });
-    if (history.length > 250) history = history.slice(0, 250);
-    fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2), "utf8");
-    console.log(`[SYNC-5D] Successfully saved ${addedCount} newly released episodes to database.`);
   } else {
     console.log(`[SYNC-5D] Database is already fully up to date with past ${days} days releases.`);
   }
 
-  return { addedCount, totalChecked: episodes.length, days };
+  return { addedCount, totalChecked: episodes.length, days, updatedDatabase: db, changes };
 }
 
 // Self-run when invoked directly
