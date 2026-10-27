@@ -1,0 +1,85 @@
+name: Publish AniSkip JSON
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/aniskip_data.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-aniskip-json
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    env:
+      TARGET_REPO: clix-owner/Resources-Clix
+      TARGET_BRANCH: main
+      TARGET_PATH: aniskip_data.json
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Validate configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f "data/aniskip_data.json" || {
+            echo "Missing source file: data/aniskip_data.json"
+            exit 1
+          }
+          python -m json.tool data/aniskip_data.json >/dev/null
+
+      - name: Checkout public data repository
+        uses: actions/checkout@v4
+        with:
+          repository: clix-owner/Resources-Clix
+          ref: main
+          token: ${{ secrets.PUBLIC_DATA_TOKEN }}
+          path: public-data
+
+      - name: Publish JSON only
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p "public-data/$(dirname "$TARGET_PATH")"
+          cp data/aniskip_data.json "public-data/$TARGET_PATH"
+
+          cd public-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Only this workflow's file is staged. Other files in the shared
+          # public repository are never removed or staged.
+          git add -- "$TARGET_PATH"
+
+          if git diff --cached --quiet; then
+            echo "Public AniSkip JSON is already up to date."
+            exit 0
+          fi
+
+          git commit -m "chore: update AniSkip data"
+
+          # Another workflow may push to the same public repo at the same time.
+          # Rebase on the latest target branch and retry the push a few times.
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:$TARGET_BRANCH"; then
+              exit 0
+            fi
+            echo "Push raced with another update; rebasing (attempt $attempt/5)..."
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            sleep $((attempt * 2))
+          done
+
+          echo "Failed to publish after 5 attempts."
+          exit 1

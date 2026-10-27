@@ -1,0 +1,13 @@
+{
+  "name": "aniskip-github-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node scripts/check.mjs && node scripts/test-method3.mjs && node scripts/test-editor.mjs && node scripts/test-ui.mjs"
+  },
+  "devDependencies": {
+    "vercel": "^46.1.1"
+  }
+}
