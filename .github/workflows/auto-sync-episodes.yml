@@ -24,8 +24,10 @@ jobs:
         with:
           node-version: 22
 
-      - name: Run Auto-Sync Engine
-        run: node scripts/run-auto-sync.mjs
+      - name: Run Auto-Sync Engine (Crunchyroll New Releases & Airing)
+        run: |
+          node scripts/sync-new-releases.mjs
+          node scripts/run-auto-sync.mjs
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
 
@@ -35,7 +37,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if [[ -n $(git status -s data/aniskip_data.json data/editor-history.json) ]]; then
             git add data/aniskip_data.json data/editor-history.json
-            git commit -m "chore(auto-sync): update airing anime skip timestamps [skip ci]"
+            git commit -m "chore(auto-sync): update crunchyroll new releases & airing skip timestamps [skip ci]"
             git push origin HEAD:${{ github.ref_name }}
             echo "Updates committed and pushed successfully."
           else

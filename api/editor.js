@@ -185,6 +185,12 @@ export default async function handler(req, res) {
       });
       return send(res, 200, { ok: true, count: list.length, airingList: list });
     }
+    if (mode === 'sync-new-releases') {
+      const { syncNewReleases } = await import('../scripts/sync-new-releases.mjs');
+      const limit = Number(req.query.limit || body.limit || 100);
+      const result = await syncNewReleases(limit, false);
+      return send(res, 200, { ok: true, ...result });
+    }
     // Backward-compatible direct submissions are audited too. The new UI
     // always uses explicit preview/apply with optimistic concurrency.
     if (mode === 'bulk') throw fail('Use the new preview import to save bulk records');
