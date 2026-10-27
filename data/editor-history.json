@@ -308,5 +308,518 @@
         "mediaId": "GE00367579JAJP"
       }
     ]
+  },
+  {
+    "id": "new_5days_1793110154222",
+    "at": "2026-10-27T14:09:14.222Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "malId": 63754,
+    "count": 84,
+    "changes": [
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 5,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 11,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 12,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 9,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 5,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 5,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 10,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 13,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 8,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 7,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 9,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 39,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 11,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 171,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 174,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 172,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 5,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 2,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 5,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 9,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 10,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 23,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 43,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 44,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 41,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 42,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 45,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 29,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 4,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 16,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 21,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 20,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 17,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 15,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 13,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 18,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 19,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 22,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 14,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 16,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 24,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 24,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 23,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 22,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 52,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 49,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 50,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 9,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 12,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 3,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 1,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 14,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 17,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      },
+      {
+        "episode": 15,
+        "source": "crunchyroll/videos-new-5days",
+        "before": null,
+        "after": "synced timestamps"
+      }
+    ]
   }
 ]

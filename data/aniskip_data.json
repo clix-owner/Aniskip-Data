@@ -157749,6 +157749,110 @@
       }
     }
   },
+  "34572": {
+    "anilistId": 34572,
+    "malId": 34572,
+    "title": "Black Clover",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "171": {
+        "op": {
+          "start": 0,
+          "end": 65
+        },
+        "ed": {
+          "start": 1339,
+          "end": 1430
+        }
+      },
+      "172": {
+        "op": {
+          "start": 174,
+          "end": 258
+        },
+        "ed": {
+          "start": 1347,
+          "end": 1430
+        }
+      },
+      "174": {
+        "op": {
+          "start": 355,
+          "end": 393
+        },
+        "ed": {
+          "start": 1340,
+          "end": 1424
+        }
+      }
+    }
+  },
+  "39468": {
+    "anilistId": 39468,
+    "malId": 39468,
+    "title": "Ascendance of a Bookworm",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "23": {
+        "op": {
+          "start": 113,
+          "end": 203
+        },
+        "ed": {
+          "start": 1317,
+          "end": 1407
+        }
+      }
+    }
+  },
+  "39535": {
+    "anilistId": 39535,
+    "malId": 39535,
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "9": {
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "12": {
+        "ed": {
+          "start": 1322,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "44074": {
+    "anilistId": 44074,
+    "malId": 44074,
+    "title": "Link Click",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "9": {
+        "op": {
+          "start": 24,
+          "end": 111
+        },
+        "ed": {
+          "start": 1497,
+          "end": 1591
+        }
+      },
+      "12": {
+        "op": {
+          "start": 1011,
+          "end": 1092
+        }
+      }
+    }
+  },
   "48760": {
     "anilistId": 48760,
     "malId": 48760,
@@ -157764,6 +157868,93 @@
         "ed": {
           "start": 1330,
           "end": 1420
+        }
+      }
+    }
+  },
+  "49052": {
+    "anilistId": 49052,
+    "malId": 49052,
+    "title": "Aoashi",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 82,
+          "end": 171
+        },
+        "ed": {
+          "start": 1411,
+          "end": 1435
+        }
+      },
+      "2": {
+        "op": {
+          "start": 68,
+          "end": 157
+        },
+        "ed": {
+          "start": 1343,
+          "end": 1425
+        }
+      },
+      "4": {
+        "op": {
+          "start": 132,
+          "end": 221
+        },
+        "ed": {
+          "start": 1420,
+          "end": 1436
+        }
+      }
+    }
+  },
+  "51051": {
+    "anilistId": 51051,
+    "malId": 51051,
+    "title": "Dreamland",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "2": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1290,
+          "end": 1380
+        }
+      }
+    }
+  },
+  "51711": {
+    "anilistId": 51711,
+    "malId": 51711,
+    "title": "The Iceblade Sorcerer Shall Rule the World",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 187,
+          "end": 234
+        },
+        "ed": {
+          "start": 1356,
+          "end": 1429
+        }
+      },
+      "3": {
+        "op": {
+          "start": 112,
+          "end": 159
+        },
+        "ed": {
+          "start": 1370,
+          "end": 1429
         }
       }
     }
@@ -158258,6 +158449,966 @@
         "op": {
           "start": 0,
           "end": 90
+        }
+      },
+      "49": {
+        "op": {
+          "start": 63,
+          "end": 153
+        },
+        "ed": {
+          "start": 1335,
+          "end": 1420
+        }
+      },
+      "50": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1417
+        }
+      },
+      "52": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1335,
+          "end": 1425
+        }
+      }
+    }
+  },
+  "54724": {
+    "anilistId": 54724,
+    "malId": 54724,
+    "title": "The Elusive Samurai",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "13": {
+        "op": {
+          "start": 0,
+          "end": 91
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "14": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "15": {
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "16": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "17": {
+        "op": {
+          "start": 239,
+          "end": 329
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "18": {
+        "op": {
+          "start": 258,
+          "end": 348
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1416
+        }
+      },
+      "19": {
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "20": {
+        "op": {
+          "start": 64,
+          "end": 154
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "21": {
+        "op": {
+          "start": 67,
+          "end": 157
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1418
+        }
+      },
+      "22": {
+        "op": {
+          "start": 109,
+          "end": 199
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "24": {
+        "op": {
+          "start": 0,
+          "end": 128
+        },
+        "ed": {
+          "start": 1322,
+          "end": 1417
+        }
+      }
+    }
+  },
+  "55265": {
+    "anilistId": 55265,
+    "malId": 55265,
+    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "2": {
+        "op": {
+          "start": 205,
+          "end": 295
+        },
+        "ed": {
+          "start": 1315,
+          "end": 1405
+        }
+      },
+      "3": {
+        "op": {
+          "start": 57,
+          "end": 147
+        },
+        "ed": {
+          "start": 1315,
+          "end": 1409
+        }
+      },
+      "5": {
+        "op": {
+          "start": 46,
+          "end": 136
+        },
+        "ed": {
+          "start": 1315,
+          "end": 1405
+        }
+      }
+    }
+  },
+  "58811": {
+    "anilistId": 58811,
+    "malId": 58811,
+    "title": "TOUGEN ANKI",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 103,
+          "end": 134
+        },
+        "ed": {
+          "start": 1265,
+          "end": 1386
+        }
+      },
+      "2": {
+        "op": {
+          "start": 76,
+          "end": 166
+        },
+        "ed": {
+          "start": 1237,
+          "end": 1327
+        }
+      }
+    }
+  },
+  "59644": {
+    "anilistId": 59644,
+    "malId": 59644,
+    "title": "A Wild Last Boss Appeared!",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 0,
+          "end": 113
+        },
+        "ed": {
+          "start": 1327,
+          "end": 1420
+        }
+      },
+      "2": {
+        "op": {
+          "start": 72,
+          "end": 162
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      },
+      "5": {
+        "op": {
+          "start": 87,
+          "end": 180
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "59741": {
+    "anilistId": 59741,
+    "malId": 59741,
+    "title": "The Exiled Heavy Knight Knows How to Game the System",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "14": {
+        "op": {
+          "start": 140,
+          "end": 229
+        },
+        "ed": {
+          "start": 1291,
+          "end": 1390
+        }
+      },
+      "15": {
+        "op": {
+          "start": 73,
+          "end": 162
+        },
+        "ed": {
+          "start": 1300,
+          "end": 1390
+        }
+      },
+      "17": {
+        "op": {
+          "start": 149,
+          "end": 238
+        },
+        "ed": {
+          "start": 1300,
+          "end": 1390
+        }
+      }
+    }
+  },
+  "59787": {
+    "anilistId": 59787,
+    "malId": 59787,
+    "title": "Romelia War Chronicle",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 90,
+          "end": 182
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "60153": {
+    "anilistId": 60153,
+    "malId": 60153,
+    "title": "Rilakkuma",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "29": {
+        "ed": {
+          "start": 60,
+          "end": 90
+        }
+      }
+    }
+  },
+  "60260": {
+    "anilistId": 60260,
+    "malId": 60260,
+    "title": "Hotel Inhumans",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 304,
+          "end": 397
+        },
+        "ed": {
+          "start": 1320,
+          "end": 1410
+        }
+      }
+    }
+  },
+  "60371": {
+    "anilistId": 60371,
+    "malId": 60371,
+    "title": "You and I Are Polar Opposites",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "7": {
+        "op": {
+          "start": 36,
+          "end": 111
+        },
+        "ed": {
+          "start": 1342,
+          "end": 1432
+        }
+      },
+      "8": {
+        "op": {
+          "start": 30,
+          "end": 105
+        },
+        "ed": {
+          "start": 1342,
+          "end": 1432
+        }
+      },
+      "9": {
+        "op": {
+          "start": 85,
+          "end": 160
+        },
+        "ed": {
+          "start": 1342,
+          "end": 1432
+        }
+      },
+      "10": {
+        "op": {
+          "start": 81,
+          "end": 156
+        },
+        "ed": {
+          "start": 1342,
+          "end": 1432
+        }
+      },
+      "13": {
+        "op": {
+          "start": 36,
+          "end": 111
+        },
+        "ed": {
+          "start": 1342,
+          "end": 1432
+        }
+      }
+    }
+  },
+  "61014": {
+    "anilistId": 61014,
+    "malId": 61014,
+    "title": "A Certain Dark Item",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "3": {
+        "op": {
+          "start": 107,
+          "end": 197
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "61153": {
+    "anilistId": 61153,
+    "malId": 61153,
+    "title": "A Tale of the Secret Saint",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "5": {
+        "op": {
+          "start": 112,
+          "end": 202
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "61169": {
+    "anilistId": 61169,
+    "malId": 61169,
+    "title": "BLACK TORCH",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "9": {
+        "op": {
+          "start": 86,
+          "end": 176
+        },
+        "ed": {
+          "start": 1335,
+          "end": 1425
+        }
+      },
+      "10": {
+        "op": {
+          "start": 46,
+          "end": 136
+        },
+        "ed": {
+          "start": 1335,
+          "end": 1425
+        }
+      }
+    }
+  },
+  "61269": {
+    "anilistId": 61269,
+    "malId": 61269,
+    "title": "DIGIMON BEATBREAK",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "41": {
+        "op": {
+          "start": 12,
+          "end": 116
+        },
+        "ed": {
+          "start": 1361,
+          "end": 1381
+        }
+      },
+      "42": {
+        "op": {
+          "start": 11,
+          "end": 116
+        },
+        "ed": {
+          "start": 1320,
+          "end": 1383
+        }
+      },
+      "43": {
+        "op": {
+          "start": 11,
+          "end": 116
+        },
+        "ed": {
+          "start": 1321,
+          "end": 1381
+        }
+      },
+      "44": {
+        "op": {
+          "start": 12,
+          "end": 116
+        },
+        "ed": {
+          "start": 1321,
+          "end": 1381
+        }
+      },
+      "45": {
+        "op": {
+          "start": 12,
+          "end": 116
+        },
+        "ed": {
+          "start": 1321,
+          "end": 1384
+        }
+      }
+    }
+  },
+  "61483": {
+    "anilistId": 61483,
+    "malId": 61483,
+    "title": "Jaadugar: A Witch in Mongolia",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "11": {
+        "op": {
+          "start": 152,
+          "end": 242
+        }
+      }
+    }
+  },
+  "61999": {
+    "anilistId": 61999,
+    "malId": 61999,
+    "title": "The Vermilion Mask",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "3": {
+        "op": {
+          "start": 28,
+          "end": 118
+        },
+        "ed": {
+          "start": 1310,
+          "end": 1400
+        }
+      }
+    }
+  },
+  "62524": {
+    "anilistId": 62524,
+    "malId": 62524,
+    "title": "#I'm Looking For a Zombie",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 151,
+          "end": 241
+        },
+        "ed": {
+          "start": 1327,
+          "end": 1417
+        }
+      }
+    }
+  },
+  "62907": {
+    "anilistId": 62907,
+    "malId": 62907,
+    "title": "Uncle's Obsession with Cute Things",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 85,
+          "end": 178
+        },
+        "ed": {
+          "start": 1289,
+          "end": 1379
+        }
+      },
+      "4": {
+        "op": {
+          "start": 64,
+          "end": 154
+        },
+        "ed": {
+          "start": 1282,
+          "end": 1372
+        }
+      }
+    }
+  },
+  "62981": {
+    "anilistId": 62981,
+    "malId": 62981,
+    "title": "The Drops of God",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "22": {
+        "ed": {
+          "start": 1331,
+          "end": 1422
+        }
+      },
+      "23": {
+        "op": {
+          "start": 0,
+          "end": 91
+        },
+        "ed": {
+          "start": 1331,
+          "end": 1422
+        }
+      },
+      "24": {
+        "op": {
+          "start": 0,
+          "end": 91
+        },
+        "ed": {
+          "start": 1331,
+          "end": 1422
+        }
+      }
+    }
+  },
+  "63042": {
+    "anilistId": 63042,
+    "malId": 63042,
+    "title": "Star Detective Precure!",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "39": {
+        "op": {
+          "start": 145,
+          "end": 232
+        },
+        "ed": {
+          "start": 1336,
+          "end": 1448
+        }
+      }
+    }
+  },
+  "63053": {
+    "anilistId": 63053,
+    "malId": 63053,
+    "title": "Horror Collector",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 4,
+          "end": 53
+        },
+        "ed": {
+          "start": 1422,
+          "end": 1498
+        }
+      },
+      "3": {
+        "op": {
+          "start": 81,
+          "end": 170
+        },
+        "ed": {
+          "start": 1408,
+          "end": 1498
+        }
+      }
+    }
+  },
+  "63061": {
+    "anilistId": 63061,
+    "malId": 63061,
+    "title": "Please Excuse My Younger Brothers",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "16": {
+        "op": {
+          "start": 91,
+          "end": 181
+        },
+        "ed": {
+          "start": 1340,
+          "end": 1430
+        }
+      }
+    }
+  },
+  "63098": {
+    "anilistId": 63098,
+    "malId": 63098,
+    "title": "Psyren",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 30,
+          "end": 118
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "2": {
+        "op": {
+          "start": 0,
+          "end": 118
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "4": {
+        "op": {
+          "start": 0,
+          "end": 122
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "63157": {
+    "anilistId": 63157,
+    "malId": 63157,
+    "title": "Keroro☆",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 53,
+          "end": 143
+        },
+        "ed": {
+          "start": 1311,
+          "end": 1401
+        }
+      }
+    }
+  },
+  "63292": {
+    "anilistId": 63292,
+    "malId": 63292,
+    "title": "Full Clearing Another World under a Goddess with Zero Believers",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "3": {
+        "op": {
+          "start": 92,
+          "end": 182
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "63293": {
+    "anilistId": 63293,
+    "malId": 63293,
+    "title": "Firefly Wedding",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "ed": {
+          "start": 1285,
+          "end": 1375
+        }
+      },
+      "3": {
+        "op": {
+          "start": 150,
+          "end": 240
+        },
+        "ed": {
+          "start": 1285,
+          "end": 1375
+        }
+      }
+    }
+  },
+  "63367": {
+    "anilistId": 63367,
+    "malId": 63367,
+    "title": "Dragon Ball Super: Beerus",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "3": {
+        "op": {
+          "start": 11,
+          "end": 101
+        },
+        "ed": {
+          "start": 1331,
+          "end": 1388
+        }
+      }
+    }
+  },
+  "63409": {
+    "anilistId": 63409,
+    "malId": 63409,
+    "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 248,
+          "end": 337
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      },
+      "4": {
+        "op": {
+          "start": 153,
+          "end": 242
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "63712": {
+    "anilistId": 63712,
+    "malId": 63712,
+    "title": "So What's Wrong with Getting Reborn as a Goblin?",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "5": {
+        "op": {
+          "start": 131,
+          "end": 230
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "63753": {
+    "anilistId": 63753,
+    "malId": 63753,
+    "title": "From Far Away",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 49,
+          "end": 139
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "63754": {
+    "anilistId": 63754,
+    "malId": 63754,
+    "title": "The Cold Sato-san is Only Sweet to Me",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 62,
+          "end": 152
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
+  "64340": {
+    "anilistId": 64340,
+    "malId": 64340,
+    "title": "Overgeared",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "5": {
+        "op": {
+          "start": 97,
+          "end": 184
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "65032": {
+    "anilistId": 65032,
+    "malId": 65032,
+    "title": "Though I Am an Inept Villainess Part 2",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "11": {
+        "op": {
+          "start": 135,
+          "end": 180
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1416
         }
       }
     }
