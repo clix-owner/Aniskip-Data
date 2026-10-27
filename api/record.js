@@ -255,6 +255,15 @@ export default async function handler(req, res) {
         return send(res, 200, {
           ok: true,
           resolvedTitle: title,
+          seriesTitle: topSeries.title,
+          seriesId: topSeries.id,
+          seasons: seasons.map(s => ({
+            id: s.id,
+            title: s.title,
+            season_number: s.season_number,
+            is_subbed: s.is_subbed,
+            audioLocale: s.audio_locale || s.audioLocale || ""
+          })),
           series: {
             id: topSeries.id,
             title: topSeries.title,
