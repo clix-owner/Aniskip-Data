@@ -158662,6 +158662,21 @@
       }
     }
   },
+  "59517": {
+    "anilistId": 59517,
+    "malId": 59517,
+    "title": "Chitose Is in the Ramune Bottle",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "16": {
+        "ed": {
+          "start": 1262,
+          "end": 1353
+        }
+      }
+    }
+  },
   "59644": {
     "anilistId": 59644,
     "malId": 59644,
@@ -159031,6 +159046,25 @@
       }
     }
   },
+  "62696": {
+    "anilistId": 62696,
+    "malId": 62696,
+    "title": "Super Psychic Policeman Chojo",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 61,
+          "end": 151
+        },
+        "ed": {
+          "start": 1305,
+          "end": 1395
+        }
+      }
+    }
+  },
   "62907": {
     "anilistId": 62907,
     "malId": 62907,
@@ -159310,6 +159344,25 @@
         "op": {
           "start": 153,
           "end": 242
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
+  "63431": {
+    "anilistId": 63431,
+    "malId": 63431,
+    "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 38,
+          "end": 128
         },
         "ed": {
           "start": 1330,

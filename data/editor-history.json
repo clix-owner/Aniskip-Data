@@ -1,5 +1,37 @@
 [
   {
+    "id": "new_5days_1793120507007",
+    "at": "2026-10-27T17:01:47.007Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 3,
+    "changes": [
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 16,
+        "mediaId": "GE00364815JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63431,
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episode": 4,
+        "mediaId": "GE00384390JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62696,
+        "title": "Super Psychic Policeman Chojo",
+        "episode": 4,
+        "mediaId": "GE00389798JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "0b59c3cc-83f4-4bb4-aa24-68e7ecf0473a",
     "at": "2026-10-27T11:29:19.896Z",
     "malId": 40748,
