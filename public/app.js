@@ -60,6 +60,35 @@ $('load').onclick=loadQueue;
 $('searchTitle').onclick=async()=>{try{const data=await api('search',null,{q:$('titleQuery').value,remote:$('remoteSearch').checked?'1':'0'});$('searchResults').innerHTML=data.results.map((r,i)=>`<button data-result="${i}">${escapeHtml(r.title)} · MAL ${r.malId}${r.stored?'':' · new'}</button>`).join('')||'<p>No titles found.</p>';$('searchResults').querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=data.results[Number(b.dataset.result)];$('malId').value=r.malId;$('animeTitle').textContent=r.title;loadedEpisode=null;queue=[];fillRecord(null);renderQueue();});}catch(e){status(e.message);}};
 $('checkExisting').onclick=async()=>{try{const episode=Number($('episode').value);const record=await lookup(episode);loadedEpisode={malId:mal(),episode,record};fillRecord(record);status('Existing record loaded.',true);}catch(e){status(e.message);}};
 $('fetchCrunchyroll').onclick=async()=>{try{const response=await fetch('/api/record?'+new URLSearchParams({mode:'crunchyroll',mediaId:$('mediaId').value}));const data=await response.json();if(!response.ok)throw Error(data.error);for(const f of ['op','ed'])if(data[f]){$(f+'Start').value=data[f].start;$(f+'End').value=data[f].end;$(f+'Absent').checked=false;syncAbsent(f);}status('Timestamps loaded. Review before saving.',true);}catch(e){status(e.message);}};
+if($('autoFetchEpisode'))$('autoFetchEpisode').onclick=async()=>{
+  try{
+    const id=mal(), ep=Number($('episode').value);
+    if(!Number.isFinite(ep)||ep<=0)throw Error('Enter a valid episode number first');
+    status('Searching Crunchyroll for episode...',true);
+    const animeTitle=$('animeTitle')?.textContent?.trim();
+    const title=(animeTitle&&animeTitle!=='Choose an anime to begin.')?animeTitle:$('titleQuery')?.value?.trim()||'';
+    const sQuery=new URLSearchParams({mode:'crunchyroll-resolve'});
+    if(id)sQuery.set('malId',id);
+    if(title)sQuery.set('title',title);
+    const rRes=await fetch('/api/record?'+sQuery);
+    const rData=await rRes.json();
+    if(!rRes.ok||!rData.seasons?.length)throw Error(rData.error||'Could not resolve Crunchyroll series/season');
+    const seasonId=rData.seasons[0].id;
+    status('Fetching season episodes...',true);
+    const epRes=await fetch('/api/record?'+new URLSearchParams({mode:'crunchyroll-season',seasonId}));
+    const epData=await epRes.json();
+    if(!epRes.ok||!epData.episodes?.length)throw Error(epData.error||'No episodes found for this season');
+    const match=epData.episodes.find(e=>Number(e.episode_number??e.sequence_number??e.episode)===ep);
+    if(!match)throw Error(`Episode ${ep} not found in Crunchyroll season.`);
+    const versions=Array.isArray(match.versions)?match.versions:[];
+    const orig=versions.find(v=>v?.original===true&&String(v?.guid||'').trim())||versions.find(v=>v?.audio_locale==='ja-JP'&&String(v?.guid||'').trim());
+    const mId=String(orig?.guid||match.id||'').trim();
+    if(!mId)throw Error('No Media ID found for this episode');
+    $('mediaId').value=mId;
+    status(`Found Media ID: ${mId}. Fetching skip timestamps...`,true);
+    $('fetchCrunchyroll').click();
+  }catch(e){status(e.message);}
+};
 for(const f of ['op','ed'])$(f+'Absent').onchange=()=>syncAbsent(f);
 $('previewManual').onclick=async()=>{try{if(running||saving)throw Error('Wait for the current operation first');const id=mal(),episode=Number($('episode').value);if(!Number.isFinite(episode)||episode<=0)throw Error('Enter an episode number');const patch=manualPatch();const expected=loadedEpisode?.malId===id&&loadedEpisode?.episode===episode?loadedEpisode.record:await lookup(episode,id);const after=merge(expected,patch);rows=[{episode,expected,patch,after,status:JSON.stringify(expected)===JSON.stringify(after)?'unchanged':'ready',selected:true,source:$('mediaId').value?'manual/crunchyroll':'manual',mediaId:$('mediaId').value||null}];importMalId=id;renderPreview();saveDraft();status('Review the before and after values below.',true);}catch(e){status(e.message);}};
 async function runPreview(onlyFailed=false) {
