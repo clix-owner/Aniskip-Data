@@ -39821,6 +39821,26 @@
     "format": "TV",
     "totalEpisodes": 20,
     "episodes": {
+      "1": {
+        "op": {
+          "start": 715,
+          "end": 740
+        },
+        "ed": {
+          "start": 1335,
+          "end": 1404
+        }
+      },
+      "2": {
+        "op": {
+          "start": 124,
+          "end": 215
+        },
+        "ed": {
+          "start": 1299,
+          "end": 1389
+        }
+      },
       "4": {
         "op": {
           "start": 0,
@@ -157749,6 +157769,74 @@
       }
     }
   },
+  "31240": {
+    "anilistId": 31240,
+    "malId": 31240,
+    "title": "Re:ZERO -Starting Life in Another World-",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "18": {
+        "op": {
+          "start": 180,
+          "end": 188
+        },
+        "ed": {
+          "start": 1291,
+          "end": 1381
+        }
+      },
+      "19": {
+        "op": {
+          "start": 172,
+          "end": 262
+        },
+        "ed": {
+          "start": 2288,
+          "end": 2470
+        }
+      }
+    }
+  },
+  "32615": {
+    "anilistId": 32615,
+    "malId": 32615,
+    "title": "Saga of Tanya the Evil",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "8": {
+        "op": {
+          "start": 50,
+          "end": 140
+        },
+        "ed": {
+          "start": 1295,
+          "end": 1385
+        }
+      },
+      "11": {
+        "op": {
+          "start": 47,
+          "end": 137
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      },
+      "12": {
+        "op": {
+          "start": 0,
+          "end": 42
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      }
+    }
+  },
   "34572": {
     "anilistId": 34572,
     "malId": 34572,
@@ -157853,6 +157941,41 @@
       }
     }
   },
+  "46471": {
+    "anilistId": 46471,
+    "malId": 46471,
+    "title": "The Detective Is Already Dead",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 101,
+          "end": 192
+        }
+      },
+      "2": {
+        "op": {
+          "start": 115,
+          "end": 207
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
+      "4": {
+        "op": {
+          "start": 183,
+          "end": 273
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      }
+    }
+  },
   "48760": {
     "anilistId": 48760,
     "malId": 48760,
@@ -157907,6 +158030,145 @@
         "ed": {
           "start": 1420,
           "end": 1436
+        }
+      }
+    }
+  },
+  "49184": {
+    "anilistId": 49184,
+    "malId": 49184,
+    "title": "GUNMACHAN",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 0,
+          "end": 94
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "2": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "3": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "4": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1290,
+          "end": 1380
+        }
+      },
+      "5": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "6": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1418
+        }
+      },
+      "7": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "8": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "9": {
+        "op": {
+          "start": 0,
+          "end": 94
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1418
+        }
+      },
+      "10": {
+        "op": {
+          "start": 0,
+          "end": 94
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "11": {
+        "op": {
+          "start": 0,
+          "end": 94
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "12": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
+        }
+      },
+      "13": {
+        "op": {
+          "start": 0,
+          "end": 90
+        },
+        "ed": {
+          "start": 1410,
+          "end": 1446
         }
       }
     }
@@ -158204,6 +158466,35 @@
         "ed": {
           "start": 1329,
           "end": 1418
+        }
+      }
+    }
+  },
+  "52482": {
+    "anilistId": 52482,
+    "malId": 52482,
+    "title": "Sasaki and Peeps",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "2": {
+        "op": {
+          "start": 157,
+          "end": 175
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
+        }
+      },
+      "4": {
+        "op": {
+          "start": 162,
+          "end": 252
+        },
+        "ed": {
+          "start": 1330,
+          "end": 1420
         }
       }
     }
@@ -158582,6 +158873,16 @@
           "end": 1415
         }
       },
+      "23": {
+        "op": {
+          "start": 34,
+          "end": 124
+        },
+        "ed": {
+          "start": 1325,
+          "end": 1415
+        }
+      },
       "24": {
         "op": {
           "start": 0,
@@ -158590,6 +158891,25 @@
         "ed": {
           "start": 1322,
           "end": 1417
+        }
+      }
+    }
+  },
+  "54852": {
+    "anilistId": 54852,
+    "malId": 54852,
+    "title": "A Returner's Magic Should Be Special",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "16": {
+        "op": {
+          "start": 56,
+          "end": 146
+        },
+        "ed": {
+          "start": 1379,
+          "end": 1415
         }
       }
     }
@@ -159023,6 +159343,25 @@
         "op": {
           "start": 152,
           "end": 242
+        }
+      }
+    }
+  },
+  "61640": {
+    "anilistId": 61640,
+    "malId": 61640,
+    "title": "Paws & Palaces",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "7": {
+        "op": {
+          "start": 19,
+          "end": 110
+        },
+        "ed": {
+          "start": 907,
+          "end": 994
         }
       }
     }
@@ -159466,6 +159805,35 @@
       }
     }
   },
+  "64084": {
+    "anilistId": 64084,
+    "malId": 64084,
+    "title": "The World's Strongest Witch",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "2": {
+        "op": {
+          "start": 99,
+          "end": 189
+        },
+        "ed": {
+          "start": 1334,
+          "end": 1420
+        }
+      },
+      "4": {
+        "op": {
+          "start": 54,
+          "end": 130
+        },
+        "ed": {
+          "start": 1334,
+          "end": 1420
+        }
+      }
+    }
+  },
   "64340": {
     "anilistId": 64340,
     "malId": 64340,
@@ -159481,6 +159849,25 @@
         "ed": {
           "start": 1330,
           "end": 1420
+        }
+      }
+    }
+  },
+  "64344": {
+    "anilistId": 64344,
+    "malId": 64344,
+    "title": "Dandivine",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "4": {
+        "op": {
+          "start": 100,
+          "end": 190
+        },
+        "ed": {
+          "start": 1324,
+          "end": 1415
         }
       }
     }

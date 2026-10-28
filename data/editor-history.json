@@ -1,5 +1,261 @@
 [
   {
+    "id": "new_5days_1793209116057",
+    "at": "2026-10-28T17:38:36.057Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 31,
+    "changes": [
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 16,
+        "mediaId": "GE00384064JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64344,
+        "title": "Dandivine",
+        "episode": 4,
+        "mediaId": "GE00389703JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54724,
+        "title": "The Elusive Samurai",
+        "episode": 23,
+        "mediaId": "GE00343604JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 435,
+        "title": "Magic Knight Rayearth",
+        "episode": 1,
+        "mediaId": "GE00385869JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 435,
+        "title": "Magic Knight Rayearth",
+        "episode": 2,
+        "mediaId": "GE00385870JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 9,
+        "mediaId": "G50UZ1MK8",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 2,
+        "mediaId": "GWDU8DDV2",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 10,
+        "mediaId": "GPWUKD87D",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 3,
+        "mediaId": "GWDU8DQV4",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 8,
+        "mediaId": "GX9UQZ4DW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 6,
+        "mediaId": "G4VUQ25Z9",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 11,
+        "mediaId": "GVWU04G0W",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 12,
+        "mediaId": "GWDU8Q42V",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 13,
+        "mediaId": "GG1U2Z72Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 1,
+        "mediaId": "GN7UD4EE3",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 4,
+        "mediaId": "GJWU2VEV1",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 5,
+        "mediaId": "G9DUE3M9N",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49184,
+        "title": "GUNMACHAN",
+        "episode": 7,
+        "mediaId": "GZ7UV1QEW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61640,
+        "title": "Paws & Palaces",
+        "episode": 7,
+        "mediaId": "GE00375147JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31240,
+        "title": "Re:ZERO -Starting Life in Another World-",
+        "episode": 19,
+        "mediaId": "GE00345579JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31240,
+        "title": "Re:ZERO -Starting Life in Another World-",
+        "episode": 18,
+        "mediaId": "GE00345576JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 46471,
+        "title": "The Detective Is Already Dead",
+        "episode": 1,
+        "mediaId": "GE00389819JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 46471,
+        "title": "The Detective Is Already Dead",
+        "episode": 2,
+        "mediaId": "GE00389820JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 46471,
+        "title": "The Detective Is Already Dead",
+        "episode": 4,
+        "mediaId": "GE00389822JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 32615,
+        "title": "Saga of Tanya the Evil",
+        "episode": 12,
+        "mediaId": "GE00380142JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 32615,
+        "title": "Saga of Tanya the Evil",
+        "episode": 8,
+        "mediaId": "GE00380138JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 32615,
+        "title": "Saga of Tanya the Evil",
+        "episode": 11,
+        "mediaId": "GE00380141JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 2,
+        "mediaId": "GE00328091JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 4,
+        "mediaId": "GE00328097JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 4,
+        "mediaId": "GE00385845JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 2,
+        "mediaId": "GE00385843JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793136971820",
     "at": "2026-10-27T21:36:11.820Z",
     "action": "auto/crunchyroll-5days-sync",
