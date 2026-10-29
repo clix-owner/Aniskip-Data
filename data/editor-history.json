@@ -1,5 +1,53 @@
 [
   {
+    "id": "new_5days_1793297035316",
+    "at": "2026-10-29T18:03:55.316Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 5,
+    "changes": [
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 4,
+        "mediaId": "GE00384354JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 2,
+        "mediaId": "GE00384352JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 16,
+        "mediaId": "GE00378035JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 18,
+        "mediaId": "GE00378037JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63337,
+        "title": "FX Fighter Kurumi-chan",
+        "episode": 5,
+        "mediaId": "GE00384207JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793209116057",
     "at": "2026-10-28T17:38:36.057Z",
     "action": "auto/crunchyroll-5days-sync",
