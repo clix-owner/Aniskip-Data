@@ -1,5 +1,77 @@
 [
   {
+    "id": "new_5days_1793381252104",
+    "at": "2026-10-30T17:27:32.104Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 8,
+    "changes": [
+      {
+        "malId": 63061,
+        "title": "Please Excuse My Younger Brothers",
+        "episode": 17,
+        "mediaId": "GE00379526JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58811,
+        "title": "TOUGEN ANKI",
+        "episode": 5,
+        "mediaId": "GE00390550JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58811,
+        "title": "TOUGEN ANKI",
+        "episode": 3,
+        "mediaId": "GE00390548JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63293,
+        "title": "Firefly Wedding",
+        "episode": 2,
+        "mediaId": "GE00384156JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63293,
+        "title": "Firefly Wedding",
+        "episode": 4,
+        "mediaId": "GE00384158JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54492,
+        "title": "The Apothecary Diaries",
+        "episode": 53,
+        "mediaId": "GE00384331JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61014,
+        "title": "A Certain Dark Item",
+        "episode": 4,
+        "mediaId": "GE00389354JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54492,
+        "title": "The Apothecary Diaries",
+        "episode": 51,
+        "mediaId": "GE00384329JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793331130129",
     "at": "2026-10-30T03:32:10.129Z",
     "action": "auto/crunchyroll-5days-sync",
