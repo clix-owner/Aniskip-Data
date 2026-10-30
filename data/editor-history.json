@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1793331130129",
+    "at": "2026-10-30T03:32:10.129Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 44074,
+        "title": "Link Click",
+        "episode": 10,
+        "mediaId": "GE00380283ZHCN",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793297035316",
     "at": "2026-10-29T18:03:55.316Z",
     "action": "auto/crunchyroll-5days-sync",
