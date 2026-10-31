@@ -1,5 +1,93 @@
 [
   {
+    "id": "new_5days_1793464244947",
+    "at": "2026-10-31T16:30:44.947Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 10,
+    "changes": [
+      {
+        "malId": 61483,
+        "title": "Jaadugar: A Witch in Mongolia",
+        "episode": 12,
+        "mediaId": "GE00380359JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 173,
+        "mediaId": "GE00385474JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 175,
+        "mediaId": "GE00385476JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62524,
+        "title": "#I'm Looking For a Zombie",
+        "episode": 5,
+        "mediaId": "GE00384053JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 6,
+        "mediaId": "GE00384102JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 3,
+        "mediaId": "GE00384099JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 6,
+        "mediaId": "GE00384078JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61169,
+        "title": "BLACK TORCH",
+        "episode": 11,
+        "mediaId": "GE00377919JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59787,
+        "title": "Romelia War Chronicle",
+        "episode": 5,
+        "mediaId": "GE00384295JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 235,
+        "title": "Detective Conan",
+        "episode": 1218,
+        "mediaId": "GE00366030JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793445924326",
     "at": "2026-10-31T11:25:24.326Z",
     "action": "auto/crunchyroll-5days-sync",
