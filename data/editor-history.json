@@ -1,5 +1,37 @@
 [
   {
+    "id": "new_5days_1793479672233",
+    "at": "2026-10-31T20:47:52.233Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 3,
+    "changes": [
+      {
+        "malId": 51051,
+        "title": "Dreamland",
+        "episode": 3,
+        "mediaId": "GE00392400JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63053,
+        "title": "Horror Collector",
+        "episode": 4,
+        "mediaId": "GE00389749JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63053,
+        "title": "Horror Collector",
+        "episode": 2,
+        "mediaId": "GE00389747JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793464244947",
     "at": "2026-10-31T16:30:44.947Z",
     "action": "auto/crunchyroll-5days-sync",
