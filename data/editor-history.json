@@ -1,5 +1,37 @@
 [
   {
+    "id": "new_5days_1793445924326",
+    "at": "2026-10-31T11:25:24.326Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 3,
+    "changes": [
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 24,
+        "mediaId": "GE00375201JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 1,
+        "mediaId": "GE00384363JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 4,
+        "mediaId": "GE00384366JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793416613299",
     "at": "2026-10-31T03:16:53.299Z",
     "action": "auto/crunchyroll-5days-sync",
