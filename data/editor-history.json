@@ -1,5 +1,53 @@
 [
   {
+    "id": "new_5days_1793535548273",
+    "at": "2026-11-01T12:19:08.273Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 5,
+    "changes": [
+      {
+        "malId": 49052,
+        "title": "Aoashi",
+        "episode": 5,
+        "mediaId": "GE00384113JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 49052,
+        "title": "Aoashi",
+        "episode": 3,
+        "mediaId": "GE00384111JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 18689,
+        "title": "Ace of the Diamond",
+        "episode": 17,
+        "mediaId": "GE00375479JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60371,
+        "title": "You and I Are Polar Opposites",
+        "episode": 11,
+        "mediaId": "GE00366889JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60371,
+        "title": "You and I Are Polar Opposites",
+        "episode": 12,
+        "mediaId": "GE00366890JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793479672233",
     "at": "2026-10-31T20:47:52.233Z",
     "action": "auto/crunchyroll-5days-sync",
