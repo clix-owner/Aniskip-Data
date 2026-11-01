@@ -1,5 +1,117 @@
 [
   {
+    "id": "new_5days_1793568609075",
+    "at": "2026-11-01T21:30:09.075Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 13,
+    "changes": [
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 13,
+        "mediaId": "GE00374465JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 10,
+        "mediaId": "GE00374462JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 4,
+        "mediaId": "GE00384136JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63753,
+        "title": "From Far Away",
+        "episode": 5,
+        "mediaId": "GE00384183JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63367,
+        "title": "Dragon Ball Super: Beerus",
+        "episode": 4,
+        "mediaId": "GE00389316JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63292,
+        "title": "Full Clearing Another World under a Goddess with Zero Believers",
+        "episode": 2,
+        "mediaId": "GE00384192JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60260,
+        "title": "Hotel Inhumans",
+        "episode": 5,
+        "mediaId": "GE00384219JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 6,
+        "mediaId": "GE00384138JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62907,
+        "title": "Uncle's Obsession with Cute Things",
+        "episode": 2,
+        "mediaId": "GE00385448JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63292,
+        "title": "Full Clearing Another World under a Goddess with Zero Believers",
+        "episode": 4,
+        "mediaId": "GE00384194JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64340,
+        "title": "Overgeared",
+        "episode": 6,
+        "mediaId": "GE00384233JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62907,
+        "title": "Uncle's Obsession with Cute Things",
+        "episode": 5,
+        "mediaId": "GE00385451JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58811,
+        "title": "TOUGEN ANKI",
+        "episode": 4,
+        "mediaId": "GE00390549JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793535548273",
     "at": "2026-11-01T12:19:08.273Z",
     "action": "auto/crunchyroll-5days-sync",
