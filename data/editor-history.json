@@ -1,5 +1,69 @@
 [
   {
+    "id": "new_5days_1793628769670",
+    "at": "2026-11-02T14:12:49.670Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 7,
+    "changes": [
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 1,
+        "mediaId": "GE00384315JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 4,
+        "mediaId": "GE00384318JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 3,
+        "mediaId": "GE00384317JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 2,
+        "mediaId": "GE00384316JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 2,
+        "mediaId": "GE00378315JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 6,
+        "mediaId": "GE00384320JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 5,
+        "mediaId": "GE00378318JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793568609075",
     "at": "2026-11-01T21:30:09.075Z",
     "action": "auto/crunchyroll-5days-sync",
