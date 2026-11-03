@@ -1,5 +1,181 @@
 [
   {
+    "id": "new_5days_1793745724787",
+    "at": "2026-11-03T22:42:04.787Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 21,
+    "changes": [
+      {
+        "malId": 59415,
+        "title": "Dark Machine: The Animation",
+        "episode": 4,
+        "mediaId": "GE00389727JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63489,
+        "title": "Red River",
+        "episode": 18,
+        "mediaId": "GE00379391JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 17,
+        "mediaId": "GE00364817JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 151,
+        "mediaId": "GY4G29XJ6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 141,
+        "mediaId": "GY1XM8GGY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 148,
+        "mediaId": "GYPP780JY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 150,
+        "mediaId": "GY5J2VD0Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 146,
+        "mediaId": "G6ME90Q8R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 147,
+        "mediaId": "G679E843Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 143,
+        "mediaId": "G60XN8W0R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 140,
+        "mediaId": "GRJ05DN8Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 139,
+        "mediaId": "GR4PZ87JY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 142,
+        "mediaId": "GYXJXZ2P6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 153,
+        "mediaId": "G6VM9N176",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 149,
+        "mediaId": "GRGVNGW5R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 152,
+        "mediaId": "GR8M2VN4R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 144,
+        "mediaId": "GYNV4E5QR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 145,
+        "mediaId": "GR1XM83KR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63431,
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episode": 5,
+        "mediaId": "GE00384391JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62696,
+        "title": "Super Psychic Policeman Chojo",
+        "episode": 5,
+        "mediaId": "GE00389799JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63754,
+        "title": "The Cold Sato-san is Only Sweet to Me",
+        "episode": 5,
+        "mediaId": "GE00389851JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793664710700",
     "at": "2026-11-03T00:11:50.700Z",
     "action": "auto/crunchyroll-5days-sync",
