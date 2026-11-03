@@ -1,5 +1,213 @@
 [
   {
+    "id": "new_5days_1793664710700",
+    "at": "2026-11-03T00:11:50.700Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 25,
+    "changes": [
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 2,
+        "mediaId": "GZ7UVGZGJ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 6,
+        "mediaId": "GWDU82121",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 11,
+        "mediaId": "G9DUE0800",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 9,
+        "mediaId": "GEVUZ797X",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 3,
+        "mediaId": "GD9UVM5MP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 8,
+        "mediaId": "G0DUN272J",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 1,
+        "mediaId": "G2XU07K9E",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 10,
+        "mediaId": "G7PU47Q71",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 13,
+        "mediaId": "G4VUQ52K0",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 12,
+        "mediaId": "GX9UQE011",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 7,
+        "mediaId": "GG1U2J8JG",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 4,
+        "mediaId": "GQJUG5K51",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 40221,
+        "title": "Tower of God",
+        "episode": 5,
+        "mediaId": "G50UZ0Q0P",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 2,
+        "mediaId": "GE00366820JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 7,
+        "mediaId": "GE00366825JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 6,
+        "mediaId": "GE00366824JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 11,
+        "mediaId": "GE00366829JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 8,
+        "mediaId": "GE00366826JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 10,
+        "mediaId": "GE00366828JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 1,
+        "mediaId": "GE00366819JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 3,
+        "mediaId": "GE00366821JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 4,
+        "mediaId": "GE00366822JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 5,
+        "mediaId": "GE00366823JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52034,
+        "title": "OSHI NO KO",
+        "episode": 9,
+        "mediaId": "GE00366827JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63098,
+        "title": "Psyren",
+        "episode": 3,
+        "mediaId": "GE00384254JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793628769670",
     "at": "2026-11-02T14:12:49.670Z",
     "action": "auto/crunchyroll-5days-sync",
