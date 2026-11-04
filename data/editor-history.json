@@ -1,5 +1,205 @@
 [
   {
+    "id": "new_5days_1793798929071",
+    "at": "2026-11-04T13:28:49.071Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 24,
+    "changes": [
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 5,
+        "mediaId": "GE00328100JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 5,
+        "mediaId": "GE00385846JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 16,
+        "mediaId": "GE00375193JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 5,
+        "mediaId": "GE00375182JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 14,
+        "mediaId": "GE00375191JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 6,
+        "mediaId": "GE00375183JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 22,
+        "mediaId": "GE00375199JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 3,
+        "mediaId": "GE00375180JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 7,
+        "mediaId": "GE00375184JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 19,
+        "mediaId": "GE00375196JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 2,
+        "mediaId": "GWDU858DD",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 8,
+        "mediaId": "GE00375185JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 9,
+        "mediaId": "GE00375186JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 13,
+        "mediaId": "GE00375190JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 21,
+        "mediaId": "GE00375198JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 12,
+        "mediaId": "GE00375189JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 18,
+        "mediaId": "GE00375195JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 17,
+        "mediaId": "GE00375194JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 11,
+        "mediaId": "GE00375188JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 10,
+        "mediaId": "GE00375187JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 15,
+        "mediaId": "GE00375192JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 4,
+        "mediaId": "GE00375181JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 20,
+        "mediaId": "GE00375197JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39468,
+        "title": "Ascendance of a Bookworm",
+        "episode": 1,
+        "mediaId": "G50UZ7Z5Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793745724787",
     "at": "2026-11-03T22:42:04.787Z",
     "action": "auto/crunchyroll-5days-sync",
