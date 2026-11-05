@@ -1,5 +1,37 @@
 [
   {
+    "id": "new_5days_1793919714018",
+    "at": "2026-11-05T23:01:54.018Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 3,
+    "changes": [
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 5,
+        "mediaId": "GE00384355JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 19,
+        "mediaId": "GE00378038JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64913,
+        "title": "Detective Conan: The Counterfeit Case of Ultra 30",
+        "episode": 1,
+        "mediaId": "GMEE00390308JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793886178626",
     "at": "2026-11-05T13:42:58.626Z",
     "action": "auto/crunchyroll-5days-sync",
