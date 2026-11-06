@@ -1,5 +1,53 @@
 [
   {
+    "id": "new_5days_1794004276669",
+    "at": "2026-11-06T22:31:16.669Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 5,
+    "changes": [
+      {
+        "malId": 63061,
+        "title": "Please Excuse My Younger Brothers",
+        "episode": 18,
+        "mediaId": "GE00379527JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58811,
+        "title": "TOUGEN ANKI",
+        "episode": 6,
+        "mediaId": "GE00390551JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63293,
+        "title": "Firefly Wedding",
+        "episode": 5,
+        "mediaId": "GE00384159JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54492,
+        "title": "The Apothecary Diaries",
+        "episode": 54,
+        "mediaId": "GE00384332JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61014,
+        "title": "A Certain Dark Item",
+        "episode": 5,
+        "mediaId": "GE00389355JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1793938369477",
     "at": "2026-11-06T04:12:49.477Z",
     "action": "auto/crunchyroll-5days-sync",
