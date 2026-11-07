@@ -1,5 +1,85 @@
 [
   {
+    "id": "new_5days_1794086031057",
+    "at": "2026-11-07T21:13:51.057Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 9,
+    "changes": [
+      {
+        "malId": 51051,
+        "title": "Dreamland",
+        "episode": 4,
+        "mediaId": "GE00384148FRFR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63053,
+        "title": "Horror Collector",
+        "episode": 5,
+        "mediaId": "GE00389750JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 176,
+        "mediaId": "GE00385477JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 4,
+        "mediaId": "GE00384100JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61169,
+        "title": "BLACK TORCH",
+        "episode": 12,
+        "mediaId": "GE00377920JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 7,
+        "mediaId": "GE00384103JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 7,
+        "mediaId": "GE00384079JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59787,
+        "title": "Romelia War Chronicle",
+        "episode": 6,
+        "mediaId": "GE00384296JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 235,
+        "title": "Detective Conan",
+        "episode": 1219,
+        "mediaId": "GE00366031JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794053162775",
     "at": "2026-11-07T12:06:02.775Z",
     "action": "auto/crunchyroll-5days-sync",
