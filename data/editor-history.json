@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1794053162775",
+    "at": "2026-11-07T12:06:02.775Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 2,
+        "mediaId": "GE00384364JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 5,
+        "mediaId": "GE00384367JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794023049985",
     "at": "2026-11-07T03:44:09.985Z",
     "action": "auto/crunchyroll-5days-sync",
