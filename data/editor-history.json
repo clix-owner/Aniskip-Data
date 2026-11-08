@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794140824041",
+    "at": "2026-11-08T12:27:04.041Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 49052,
+        "title": "Aoashi",
+        "episode": 6,
+        "mediaId": "GE00384114JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794108161758",
     "at": "2026-11-08T03:22:41.758Z",
     "action": "auto/crunchyroll-5days-sync",
