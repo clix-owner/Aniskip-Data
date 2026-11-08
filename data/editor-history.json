@@ -1,5 +1,141 @@
 [
   {
+    "id": "new_5days_1794173318790",
+    "at": "2026-11-08T21:28:38.790Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 16,
+    "changes": [
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 14,
+        "mediaId": "GE00374466JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 11,
+        "mediaId": "GE00374463JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 9,
+        "mediaId": "G14U47QVG",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 10,
+        "mediaId": "GJWU2WNQ9",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 1,
+        "mediaId": "GWDU82V7P",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 11,
+        "mediaId": "GN7UDMXN1",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 8,
+        "mediaId": "G4VUQ5KW2",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 12,
+        "mediaId": "GK9U3EVGE",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 55265,
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+        "episode": 7,
+        "mediaId": "GX9UQE135",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63753,
+        "title": "From Far Away",
+        "episode": 6,
+        "mediaId": "GE00384184JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63367,
+        "title": "Dragon Ball Super: Beerus",
+        "episode": 5,
+        "mediaId": "GE00389317JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60260,
+        "title": "Hotel Inhumans",
+        "episode": 6,
+        "mediaId": "GE00384220JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62907,
+        "title": "Uncle's Obsession with Cute Things",
+        "episode": 3,
+        "mediaId": "GE00385449JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63292,
+        "title": "Full Clearing Another World under a Goddess with Zero Believers",
+        "episode": 5,
+        "mediaId": "GE00384195JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64340,
+        "title": "Overgeared",
+        "episode": 7,
+        "mediaId": "GE00384234JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62907,
+        "title": "Uncle's Obsession with Cute Things",
+        "episode": 6,
+        "mediaId": "GE00385452JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794140824041",
     "at": "2026-11-08T12:27:04.041Z",
     "action": "auto/crunchyroll-5days-sync",
