@@ -1,5 +1,37 @@
 [
   {
+    "id": "new_5days_1794235313663",
+    "at": "2026-11-09T14:41:53.663Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 3,
+    "changes": [
+      {
+        "malId": 63098,
+        "title": "Psyren",
+        "episode": 5,
+        "mediaId": "GE00384256JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 3,
+        "mediaId": "GE00378316JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 6,
+        "mediaId": "GE00378319JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794173318790",
     "at": "2026-11-08T21:28:38.790Z",
     "action": "auto/crunchyroll-5days-sync",
