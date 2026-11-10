@@ -1,5 +1,253 @@
 [
   {
+    "id": "new_5days_1794350358202",
+    "at": "2026-11-10T22:39:18.202Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 30,
+    "changes": [
+      {
+        "malId": 59415,
+        "title": "Dark Machine: The Animation",
+        "episode": 5,
+        "mediaId": "GE00389728JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63489,
+        "title": "Red River",
+        "episode": 19,
+        "mediaId": "GE00379392JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 18,
+        "mediaId": "GE00364821JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 8,
+        "mediaId": "GPWUKP4M3",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 13,
+        "mediaId": "GEVUZ920E",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 7,
+        "mediaId": "G31UXGD8J",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 24,
+        "mediaId": "GK9U310Z3",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 3,
+        "mediaId": "GJWU2ZGK7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 17,
+        "mediaId": "GD9UV5J4W",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 1,
+        "mediaId": "G4VUQNJW5",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 22,
+        "mediaId": "G9DUE8QW5",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 21,
+        "mediaId": "G0DUN71Q7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 11,
+        "mediaId": "G50UZQ9G7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 14,
+        "mediaId": "G31UXGDMJ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 9,
+        "mediaId": "G8WUNZ85D",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 26,
+        "mediaId": "G7PU4QZ55",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 2,
+        "mediaId": "G14U4N05Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 5,
+        "mediaId": "GK9U310W3",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 19,
+        "mediaId": "GWDU81WNW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 20,
+        "mediaId": "GG1U28Q79",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 4,
+        "mediaId": "GN7UDQ90J",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 16,
+        "mediaId": "G8WUNZ89D",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 10,
+        "mediaId": "GD9UV5J7W",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 25,
+        "mediaId": "G0DUN713V",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 18,
+        "mediaId": "GQJUGK147",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 12,
+        "mediaId": "GG1U28Q19",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 23,
+        "mediaId": "GX9UQ5GNW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 6,
+        "mediaId": "GVWU0K511",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63431,
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episode": 6,
+        "mediaId": "GE00384392JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62696,
+        "title": "Super Psychic Policeman Chojo",
+        "episode": 6,
+        "mediaId": "GE00389800JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794319043450",
     "at": "2026-11-10T13:57:23.450Z",
     "action": "auto/crunchyroll-5days-sync",
