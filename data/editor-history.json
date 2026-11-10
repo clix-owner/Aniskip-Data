@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794319043450",
+    "at": "2026-11-10T13:57:23.450Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 63754,
+        "title": "The Cold Sato-san is Only Sweet to Me",
+        "episode": 6,
+        "mediaId": "GE00389852JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794272311962",
     "at": "2026-11-10T00:58:31.962Z",
     "action": "auto/crunchyroll-5days-sync",
