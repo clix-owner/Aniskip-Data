@@ -1,5 +1,245 @@
 [
   {
+    "id": "new_5days_1794272311962",
+    "at": "2026-11-10T00:58:31.962Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 29,
+    "changes": [
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 23,
+        "mediaId": "G9DUE0ZXV",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 6,
+        "mediaId": "GD9UV8MZG",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 3,
+        "mediaId": "G2XU0D7X7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 18,
+        "mediaId": "GWDU82V9M",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 19,
+        "mediaId": "GG1U2JWMV",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 20,
+        "mediaId": "G0DUN2G3N",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 22,
+        "mediaId": "G7PU47P58",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 8,
+        "mediaId": "G50UZ10NM",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 17,
+        "mediaId": "G50UZ0K2K",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 4,
+        "mediaId": "G8WUN0JV3",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 21,
+        "mediaId": "GEVUZ7JPW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 16,
+        "mediaId": "GK9U3EV7E",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 2,
+        "mediaId": "GPWUKD9NV",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 7,
+        "mediaId": "GQJUGQ50G",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 5,
+        "mediaId": "GZ7UV1G33",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 39535,
+        "title": "Mushoku Tensei: Jobless Reincarnation",
+        "episode": 15,
+        "mediaId": "GN7UDMX51",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 21,
+        "mediaId": "GE00008656JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 19,
+        "mediaId": "GE00008654JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 22,
+        "mediaId": "GE00008657JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 17,
+        "mediaId": "GE00008652JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 20,
+        "mediaId": "GE00008655JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 14,
+        "mediaId": "GE00008649JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 15,
+        "mediaId": "GE00008650JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 13,
+        "mediaId": "GE00008648JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 23,
+        "mediaId": "GE00008658JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 24,
+        "mediaId": "GE00008659JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 18,
+        "mediaId": "GE00008653JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 12413,
+        "title": "Jormungand",
+        "episode": 16,
+        "mediaId": "GE00008651JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59711,
+        "title": "Shiboyugi: Playing Death Games to Put Food on the Table",
+        "episode": 12,
+        "mediaId": "GE00367387JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794235313663",
     "at": "2026-11-09T14:41:53.663Z",
     "action": "auto/crunchyroll-5days-sync",
