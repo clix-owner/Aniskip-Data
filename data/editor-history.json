@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794368715777",
+    "at": "2026-11-11T03:45:15.777Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 75,
+        "title": "Fafner",
+        "episode": 15,
+        "mediaId": "G2XU0EWZZ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794350358202",
     "at": "2026-11-10T22:39:18.202Z",
     "action": "auto/crunchyroll-5days-sync",
