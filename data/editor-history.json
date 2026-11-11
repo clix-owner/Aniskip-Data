@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1794402776049",
+    "at": "2026-11-11T13:12:56.050Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 6,
+        "mediaId": "GE00328103JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 6,
+        "mediaId": "GE00385847JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794368715777",
     "at": "2026-11-11T03:45:15.777Z",
     "action": "auto/crunchyroll-5days-sync",
