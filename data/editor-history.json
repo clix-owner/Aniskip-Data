@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794492916882",
+    "at": "2026-11-12T14:15:16.882Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 63337,
+        "title": "FX Fighter Kurumi-chan",
+        "episode": 7,
+        "mediaId": "GE00384209JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794441075963",
     "at": "2026-11-11T23:51:15.963Z",
     "action": "auto/crunchyroll-5days-sync",
