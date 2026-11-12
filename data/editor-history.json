@@ -1,5 +1,269 @@
 [
   {
+    "id": "new_5days_1794524291810",
+    "at": "2026-11-12T22:58:11.810Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 32,
+    "changes": [
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 6,
+        "mediaId": "GE00384356JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 169,
+        "mediaId": "GK9U3ZW1D",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 163,
+        "mediaId": "G9DUEX487",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 165,
+        "mediaId": "G4VUQ3DNJ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 170,
+        "mediaId": "GMKUXZ0KQ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 157,
+        "mediaId": "G6DV0QX16",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 168,
+        "mediaId": "GN7UDZ0Q4",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 164,
+        "mediaId": "GX9UQD25P",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 167,
+        "mediaId": "GJWU2MKZZ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 160,
+        "mediaId": "G0DUN3Z73",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 158,
+        "mediaId": "G61QK9EGY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 155,
+        "mediaId": "GY9XGPKJ6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 156,
+        "mediaId": "GYKKD5VWY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 161,
+        "mediaId": "GEVUZP098",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 166,
+        "mediaId": "G14U435ND",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 154,
+        "mediaId": "G6EME541Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 162,
+        "mediaId": "G7PU458QV",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 159,
+        "mediaId": "GG1U2M187",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 20,
+        "mediaId": "GE00378039JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63367,
+        "title": "Dragon Ball Super: Beerus",
+        "episode": 1,
+        "mediaId": "GE00389313JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 10,
+        "mediaId": "GX9UQEX4X",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 6,
+        "mediaId": "G0DUN2PX0",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 2,
+        "mediaId": "GQJUG5JZX",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 1,
+        "mediaId": "GD9UVMKG0",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 12,
+        "mediaId": "G14U47DPM",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 7,
+        "mediaId": "GEVUZ7MQK",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 8,
+        "mediaId": "G7PU47EDX",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 4,
+        "mediaId": "GWDU82X39",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 9,
+        "mediaId": "G9DUE0J2Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 3,
+        "mediaId": "G50UZ0PDJ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 5,
+        "mediaId": "GG1U2J9VD",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58059,
+        "title": "Wistoria: Wand and Sword",
+        "episode": 11,
+        "mediaId": "G4VUQ597N",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794492916882",
     "at": "2026-11-12T14:15:16.882Z",
     "action": "auto/crunchyroll-5days-sync",
