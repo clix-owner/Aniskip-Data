@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1794660165110",
+    "at": "2026-11-14T12:42:45.110Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 235,
+        "title": "Detective Conan",
+        "episode": 1220,
+        "mediaId": "GE00366032JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 6,
+        "mediaId": "GE00384368JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794628942675",
     "at": "2026-11-14T04:02:22.675Z",
     "action": "auto/crunchyroll-5days-sync",
