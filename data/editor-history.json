@@ -1,5 +1,69 @@
 [
   {
+    "id": "new_5days_1794692914764",
+    "at": "2026-11-14T21:48:34.764Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 7,
+    "changes": [
+      {
+        "malId": 51051,
+        "title": "Dreamland",
+        "episode": 5,
+        "mediaId": "GE00384149FRFR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63053,
+        "title": "Horror Collector",
+        "episode": 6,
+        "mediaId": "GE00389751JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 177,
+        "mediaId": "GE00385478JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62524,
+        "title": "#I'm Looking For a Zombie",
+        "episode": 6,
+        "mediaId": "GE00384054JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 8,
+        "mediaId": "GE00384104JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 8,
+        "mediaId": "GE00384080JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59787,
+        "title": "Romelia War Chronicle",
+        "episode": 7,
+        "mediaId": "GE00384297JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794660165110",
     "at": "2026-11-14T12:42:45.110Z",
     "action": "auto/crunchyroll-5days-sync",
