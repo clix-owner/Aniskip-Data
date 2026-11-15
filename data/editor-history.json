@@ -1,5 +1,61 @@
 [
   {
+    "id": "new_5days_1794781028475",
+    "at": "2026-11-15T22:17:08.475Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 6,
+    "changes": [
+      {
+        "malId": 63753,
+        "title": "From Far Away",
+        "episode": 7,
+        "mediaId": "GE00384185JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63367,
+        "title": "Dragon Ball Super: Beerus",
+        "episode": 6,
+        "mediaId": "GE00389318JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60260,
+        "title": "Hotel Inhumans",
+        "episode": 7,
+        "mediaId": "GE00384221JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63292,
+        "title": "Full Clearing Another World under a Goddess with Zero Believers",
+        "episode": 6,
+        "mediaId": "GE00384196JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64340,
+        "title": "Overgeared",
+        "episode": 8,
+        "mediaId": "GE00384235JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62907,
+        "title": "Uncle's Obsession with Cute Things",
+        "episode": 7,
+        "mediaId": "GE00385453JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794748193497",
     "at": "2026-11-15T13:09:53.497Z",
     "action": "auto/crunchyroll-5days-sync",
