@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794714540340",
+    "at": "2026-11-15T03:49:00.340Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 63042,
+        "title": "Star Detective Precure!",
+        "episode": 41,
+        "mediaId": "GE00369491JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794692914764",
     "at": "2026-11-14T21:48:34.764Z",
     "action": "auto/crunchyroll-5days-sync",
