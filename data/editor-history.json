@@ -1,5 +1,173 @@
 [
   {
+    "id": "new_5days_1794838662562",
+    "at": "2026-11-16T14:17:42.562Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 20,
+    "changes": [
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 9,
+        "mediaId": "G7PU472DP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 2,
+        "mediaId": "GD9UVMZZK",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 5,
+        "mediaId": "GWDU82MMQ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 6,
+        "mediaId": "GG1U2J554",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 3,
+        "mediaId": "GQJUG500K",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 10,
+        "mediaId": "G9DUE0N2N",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 12,
+        "mediaId": "G4VUQ507Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 4,
+        "mediaId": "G50UZ0NN5",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 8,
+        "mediaId": "GEVUZ7337",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 1,
+        "mediaId": "GZ7UVG338",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 7,
+        "mediaId": "G0DUN2WWK",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52588,
+        "title": "Kaiju No. 8",
+        "episode": 11,
+        "mediaId": "GX9UQEM44",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 8,
+        "mediaId": "G14U492Q5",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 11,
+        "mediaId": "GK9U3MQV7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 10,
+        "mediaId": "GN7UD2GX8",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 7,
+        "mediaId": "G4VUQ1ZKW",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 12,
+        "mediaId": "GMKUXQW9Z",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52991,
+        "title": "Frieren: Beyond Journey’s End",
+        "episode": 9,
+        "mediaId": "GJWU298ND",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 7,
+        "mediaId": "GE00384321JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 7,
+        "mediaId": "GE00378320JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794781028475",
     "at": "2026-11-15T22:17:08.475Z",
     "action": "auto/crunchyroll-5days-sync",
