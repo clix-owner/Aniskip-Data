@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1794878297803",
+    "at": "2026-11-17T01:18:17.804Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 63098,
+        "title": "Psyren",
+        "episode": 6,
+        "mediaId": "GE00384257JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794838662562",
     "at": "2026-11-16T14:17:42.562Z",
     "action": "auto/crunchyroll-5days-sync",
