@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1794928236045",
+    "at": "2026-11-17T15:10:36.045Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 62696,
+        "title": "Super Psychic Policeman Chojo",
+        "episode": 7,
+        "mediaId": "GE00389801JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63754,
+        "title": "The Cold Sato-san is Only Sweet to Me",
+        "episode": 7,
+        "mediaId": "GE00389853JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794878297803",
     "at": "2026-11-17T01:18:17.804Z",
     "action": "auto/crunchyroll-5days-sync",
