@@ -1,5 +1,45 @@
 [
   {
+    "id": "new_5days_1795013291432",
+    "at": "2026-11-18T14:48:11.432Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 4,
+    "changes": [
+      {
+        "malId": 61640,
+        "title": "Paws & Palaces",
+        "episode": 10,
+        "mediaId": "GE00375150JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 46471,
+        "title": "The Detective Is Already Dead",
+        "episode": 7,
+        "mediaId": "GE00389825JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 7,
+        "mediaId": "GE00328106JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 7,
+        "mediaId": "GE00385848JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794960784425",
     "at": "2026-11-18T00:13:04.425Z",
     "action": "auto/crunchyroll-5days-sync",
