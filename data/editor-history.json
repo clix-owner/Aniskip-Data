@@ -1,5 +1,133 @@
 [
   {
+    "id": "new_5days_1795045333219",
+    "at": "2026-11-18T23:42:13.219Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 15,
+    "changes": [
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 19,
+        "mediaId": "GE00384067JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64344,
+        "title": "Dandivine",
+        "episode": 7,
+        "mediaId": "GE00389706JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 22,
+        "title": "The Prince of Tennis",
+        "episode": 8,
+        "mediaId": "GE00385660JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 7,
+        "mediaId": "G0DUND5JE",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 1,
+        "mediaId": "GZ7UV201Q",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 10,
+        "mediaId": "G9DUE51GX",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 8,
+        "mediaId": "GEVUZX4N1",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 3,
+        "mediaId": "GQJUGVPQZ",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 2,
+        "mediaId": "GD9UVQP8Z",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 4,
+        "mediaId": "G50UZX71Z",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 6,
+        "mediaId": "GG1U243Z1",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 5,
+        "mediaId": "GWDU8E5Q7",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 9,
+        "mediaId": "G7PU4MXJK",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 11,
+        "mediaId": "GX9UQJPZK",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 12,
+        "mediaId": "G4VUQ1E8X",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795013291432",
     "at": "2026-11-18T14:48:11.432Z",
     "action": "auto/crunchyroll-5days-sync",
