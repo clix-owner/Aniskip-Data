@@ -1,5 +1,61 @@
 [
   {
+    "id": "new_5days_1794960784425",
+    "at": "2026-11-18T00:13:04.425Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 6,
+    "changes": [
+      {
+        "malId": 63489,
+        "title": "Red River",
+        "episode": 20,
+        "mediaId": "GE00379393JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59415,
+        "title": "Dark Machine: The Animation",
+        "episode": 6,
+        "mediaId": "GE00389729JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 13,
+        "mediaId": "GE00389507JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 19,
+        "mediaId": "GE00364823JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62171,
+        "title": "The Classroom of the Black Cat and a Witch",
+        "episode": 1,
+        "mediaId": "GE00376636JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63431,
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episode": 7,
+        "mediaId": "GE00384393JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1794928236045",
     "at": "2026-11-17T15:10:36.045Z",
     "action": "auto/crunchyroll-5days-sync",
