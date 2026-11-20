@@ -1,5 +1,69 @@
 [
   {
+    "id": "new_5days_1795132830342",
+    "at": "2026-11-20T00:00:30.342Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 7,
+    "changes": [
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 3,
+        "mediaId": "GE00378022JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 2,
+        "mediaId": "GE00378021JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 7,
+        "mediaId": "GE00384357JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 1,
+        "mediaId": "GE00378020JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 4,
+        "mediaId": "GE00378023JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 21,
+        "mediaId": "GE00378040JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63367,
+        "title": "Dragon Ball Super: Beerus",
+        "episode": 2,
+        "mediaId": "GE00389314JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795100106104",
     "at": "2026-11-19T14:55:06.104Z",
     "action": "auto/crunchyroll-5days-sync",
