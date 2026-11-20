@@ -1,5 +1,21 @@
 [
   {
+    "id": "new_5days_1795185350201",
+    "at": "2026-11-20T14:35:50.201Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 1,
+    "changes": [
+      {
+        "malId": 44200,
+        "title": "My Hero Academia: World Heroes' Mission",
+        "episode": 1,
+        "mediaId": "GWDU8JVX5",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795132830342",
     "at": "2026-11-20T00:00:30.342Z",
     "action": "auto/crunchyroll-5days-sync",

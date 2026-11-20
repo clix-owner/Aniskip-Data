@@ -159954,6 +159954,25 @@
       }
     }
   },
+  "44200": {
+    "anilistId": 44200,
+    "malId": 44200,
+    "title": "My Hero Academia: World Heroes' Mission",
+    "format": "TV",
+    "totalEpisodes": 0,
+    "episodes": {
+      "1": {
+        "op": {
+          "start": 479,
+          "end": 569
+        },
+        "ed": {
+          "start": 6036,
+          "end": 6267
+        }
+      }
+    }
+  },
   "46471": {
     "anilistId": 46471,
     "malId": 46471,
