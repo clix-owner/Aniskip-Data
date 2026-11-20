@@ -1,5 +1,101 @@
 [
   {
+    "id": "new_5days_1795217377213",
+    "at": "2026-11-20T23:29:37.213Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 11,
+    "changes": [
+      {
+        "malId": 63061,
+        "title": "Please Excuse My Younger Brothers",
+        "episode": 20,
+        "mediaId": "GE00379529JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 58811,
+        "title": "TOUGEN ANKI",
+        "episode": 8,
+        "mediaId": "GE00390553JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 3,
+        "mediaId": "GE00378821JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 5,
+        "mediaId": "GE00378823JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 4,
+        "mediaId": "GE00378822JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 6,
+        "mediaId": "GE00378824JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 2,
+        "mediaId": "GE00378820JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61814,
+        "title": "The Ogre's Bride",
+        "episode": 1,
+        "mediaId": "GE00378819JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63293,
+        "title": "Firefly Wedding",
+        "episode": 7,
+        "mediaId": "GE00384161JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61014,
+        "title": "A Certain Dark Item",
+        "episode": 7,
+        "mediaId": "GE00389357JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54492,
+        "title": "The Apothecary Diaries",
+        "episode": 56,
+        "mediaId": "GE00384334JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795185350201",
     "at": "2026-11-20T14:35:50.201Z",
     "action": "auto/crunchyroll-5days-sync",
