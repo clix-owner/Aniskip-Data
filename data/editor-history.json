@@ -1,5 +1,53 @@
 [
   {
+    "id": "new_5days_1795300544205",
+    "at": "2026-11-21T22:35:44.205Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 5,
+    "changes": [
+      {
+        "malId": 51051,
+        "title": "Dreamland",
+        "episode": 6,
+        "mediaId": "GE00392403JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63053,
+        "title": "Horror Collector",
+        "episode": 7,
+        "mediaId": "GE00389752JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 34572,
+        "title": "Black Clover",
+        "episode": 178,
+        "mediaId": "GE00385479JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62524,
+        "title": "#I'm Looking For a Zombie",
+        "episode": 7,
+        "mediaId": "GE00384055JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 1,
+        "mediaId": "GE00384073JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795269229886",
     "at": "2026-11-21T13:53:49.886Z",
     "action": "auto/crunchyroll-5days-sync",
