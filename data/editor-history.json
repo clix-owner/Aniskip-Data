@@ -1,5 +1,85 @@
 [
   {
+    "id": "new_5days_1795269229886",
+    "at": "2026-11-21T13:53:49.886Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 9,
+    "changes": [
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 9,
+        "mediaId": "GE00384105JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 9,
+        "mediaId": "GE00384081JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59787,
+        "title": "Romelia War Chronicle",
+        "episode": 8,
+        "mediaId": "GE00384298JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 235,
+        "title": "Detective Conan",
+        "episode": 1221,
+        "mediaId": "GE00390662JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 7,
+        "mediaId": "GE00384369JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61269,
+        "title": "DIGIMON BEATBREAK",
+        "episode": 47,
+        "mediaId": "GE00364472JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61269,
+        "title": "DIGIMON BEATBREAK",
+        "episode": 48,
+        "mediaId": "GE00364474JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61269,
+        "title": "DIGIMON BEATBREAK",
+        "episode": 49,
+        "mediaId": "GE00364476JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61269,
+        "title": "DIGIMON BEATBREAK",
+        "episode": 46,
+        "mediaId": "GE00364470JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795236457528",
     "at": "2026-11-21T04:47:37.528Z",
     "action": "auto/crunchyroll-5days-sync",
