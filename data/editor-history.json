@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1795236457528",
+    "at": "2026-11-21T04:47:37.528Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 60153,
+        "title": "Rilakkuma",
+        "episode": 33,
+        "mediaId": "GE00375560JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63157,
+        "title": "Keroro☆",
+        "episode": 8,
+        "mediaId": "GE00385918JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795217377213",
     "at": "2026-11-20T23:29:37.213Z",
     "action": "auto/crunchyroll-5days-sync",
