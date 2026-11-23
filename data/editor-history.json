@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1795452609582",
+    "at": "2026-11-23T16:50:09.582Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 63712,
+        "title": "So What's Wrong with Getting Reborn as a Goblin?",
+        "episode": 8,
+        "mediaId": "GE00384322JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63409,
+        "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "episode": 8,
+        "mediaId": "GE00378321JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795388293646",
     "at": "2026-11-22T22:58:13.646Z",
     "action": "auto/crunchyroll-5days-sync",
