@@ -1,5 +1,61 @@
 [
   {
+    "id": "new_5days_1795538561002",
+    "at": "2026-11-24T16:42:41.002Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 6,
+    "changes": [
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 20,
+        "mediaId": "GE00364825JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59517,
+        "title": "Chitose Is in the Ramune Bottle",
+        "episode": 14,
+        "mediaId": "GE00364811JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62171,
+        "title": "The Classroom of the Black Cat and a Witch",
+        "episode": 2,
+        "mediaId": "GE00376637JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63431,
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episode": 8,
+        "mediaId": "GE00384394JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 62696,
+        "title": "Super Psychic Policeman Chojo",
+        "episode": 8,
+        "mediaId": "GE00389802JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63754,
+        "title": "The Cold Sato-san is Only Sweet to Me",
+        "episode": 8,
+        "mediaId": "GE00389854JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795452609582",
     "at": "2026-11-23T16:50:09.582Z",
     "action": "auto/crunchyroll-5days-sync",
