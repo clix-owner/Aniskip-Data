@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1795571096259",
+    "at": "2026-11-25T01:44:56.259Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 59415,
+        "title": "Dark Machine: The Animation",
+        "episode": 7,
+        "mediaId": "GE00389730JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63489,
+        "title": "Red River",
+        "episode": 21,
+        "mediaId": "GE00379394JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795538561002",
     "at": "2026-11-24T16:42:41.002Z",
     "action": "auto/crunchyroll-5days-sync",
