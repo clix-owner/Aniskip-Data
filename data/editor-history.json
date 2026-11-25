@@ -1,5 +1,61 @@
 [
   {
+    "id": "new_5days_1795624071972",
+    "at": "2026-11-25T16:27:51.972Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 6,
+    "changes": [
+      {
+        "malId": 22,
+        "title": "The Prince of Tennis",
+        "episode": 9,
+        "mediaId": "GE00385661JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 435,
+        "title": "Magic Knight Rayearth",
+        "episode": 8,
+        "mediaId": "GE00385876JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61640,
+        "title": "Paws & Palaces",
+        "episode": 11,
+        "mediaId": "GE00375151JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 46471,
+        "title": "The Detective Is Already Dead",
+        "episode": 8,
+        "mediaId": "GE00389826JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 52482,
+        "title": "Sasaki and Peeps",
+        "episode": 8,
+        "mediaId": "GE00328109JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64084,
+        "title": "The World's Strongest Witch",
+        "episode": 8,
+        "mediaId": "GE00385849JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795571096259",
     "at": "2026-11-25T01:44:56.259Z",
     "action": "auto/crunchyroll-5days-sync",
