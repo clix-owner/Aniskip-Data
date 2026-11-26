@@ -1,5 +1,45 @@
 [
   {
+    "id": "new_5days_1795655959438",
+    "at": "2026-11-26T01:19:19.438Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 4,
+    "changes": [
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 13,
+        "mediaId": "GE00384061JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 14,
+        "mediaId": "GE00384062JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 54852,
+        "title": "A Returner's Magic Should Be Special",
+        "episode": 20,
+        "mediaId": "GE00384068JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 64344,
+        "title": "Dandivine",
+        "episode": 8,
+        "mediaId": "GE00389707JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795624071972",
     "at": "2026-11-25T16:27:51.972Z",
     "action": "auto/crunchyroll-5days-sync",
