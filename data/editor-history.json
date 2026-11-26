@@ -1,5 +1,29 @@
 [
   {
+    "id": "new_5days_1795708820675",
+    "at": "2026-11-26T16:00:20.675Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 2,
+    "changes": [
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 22,
+        "mediaId": "GE00378041JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63337,
+        "title": "FX Fighter Kurumi-chan",
+        "episode": 9,
+        "mediaId": "GE00384211JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795655959438",
     "at": "2026-11-26T01:19:19.438Z",
     "action": "auto/crunchyroll-5days-sync",
