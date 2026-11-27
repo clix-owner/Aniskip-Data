@@ -1,5 +1,53 @@
 [
   {
+    "id": "new_5days_1795742256804",
+    "at": "2026-11-27T01:17:36.804Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 5,
+    "changes": [
+      {
+        "malId": 51711,
+        "title": "The Iceblade Sorcerer Shall Rule the World",
+        "episode": 8,
+        "mediaId": "GE00384358JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 5,
+        "mediaId": "GE00378024JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 7,
+        "mediaId": "GE00378026JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 6,
+        "mediaId": "GE00378025JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59741,
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episode": 8,
+        "mediaId": "GE00378027JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795708820675",
     "at": "2026-11-26T16:00:20.675Z",
     "action": "auto/crunchyroll-5days-sync",
