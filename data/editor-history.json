@@ -1,5 +1,269 @@
 [
   {
+    "id": "new_5days_1795877108349",
+    "at": "2026-11-28T14:45:08.349Z",
+    "action": "auto/crunchyroll-5days-sync",
+    "count": 32,
+    "changes": [
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 23,
+        "mediaId": "G65VZG586",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 16,
+        "mediaId": "G6K52DW3Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 19,
+        "mediaId": "G6X053MNY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 18,
+        "mediaId": "GY49DG1ER",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 34,
+        "mediaId": "GY5V1718Y",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 17,
+        "mediaId": "GYQ424KG6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 20,
+        "mediaId": "GR9PZNVV6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 31,
+        "mediaId": "GRGGZ8W3R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 21,
+        "mediaId": "G6MG23046",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 37,
+        "mediaId": "GY19PQ92R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 29,
+        "mediaId": "GRJQZ2QEY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 38,
+        "mediaId": "GY19PND0R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 14,
+        "mediaId": "G65V37P56",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 33,
+        "mediaId": "GYZXZ1536",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 13,
+        "mediaId": "GRDQ8WKWY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 15,
+        "mediaId": "G6NQ54336",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 35,
+        "mediaId": "GYE5Z2ZNR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 25,
+        "mediaId": "G6ZXPQ83R",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 36,
+        "mediaId": "G6Q45J8PR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 28,
+        "mediaId": "GR197QDE6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 32,
+        "mediaId": "GYGGZD2WY",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 27,
+        "mediaId": "GYE5ZXMXR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 22,
+        "mediaId": "GRE573ZQ6",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 24,
+        "mediaId": "GR8VZEMJR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 31964,
+        "title": "My Hero Academia",
+        "episode": 30,
+        "mediaId": "GYE5ZJEXR",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 2,
+        "mediaId": "GE00384074JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59644,
+        "title": "A Wild Last Boss Appeared!",
+        "episode": 10,
+        "mediaId": "GE00384106JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61153,
+        "title": "A Tale of the Secret Saint",
+        "episode": 10,
+        "mediaId": "GE00384082JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 59787,
+        "title": "Romelia War Chronicle",
+        "episode": 9,
+        "mediaId": "GE00384299JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 61999,
+        "title": "The Vermilion Mask",
+        "episode": 8,
+        "mediaId": "GE00384370JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 60153,
+        "title": "Rilakkuma",
+        "episode": 34,
+        "mediaId": "GE00375561JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      },
+      {
+        "malId": 63157,
+        "title": "Keroro☆",
+        "episode": 9,
+        "mediaId": "GE00385919JAJP",
+        "source": "crunchyroll/videos-new-5days",
+        "after": "synced timestamps"
+      }
+    ]
+  },
+  {
     "id": "new_5days_1795827063011",
     "at": "2026-11-28T00:51:03.011Z",
     "action": "auto/crunchyroll-5days-sync",
